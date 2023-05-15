@@ -14,15 +14,23 @@ html, body {
     width: 80%;
     min-width: 800px;
     margin: 0 auto;
+    height: 80%;
+    min-height: 800px;
   }
   
   /* || typography */
   
-  h1, h2, p, li {
+  h1, h2, li {
     font-family: 'Shrikhand';
     color: #001A1E;
   }
-  
+
+  p {
+    font-family: 'monospace';
+    font-size: 40px;
+    color: #001A1E;
+    text-align: justify;
+  }
 
   
   h1 {
@@ -65,9 +73,9 @@ html, body {
   }
   
   header img {
-    display: block;
-    height: 85px;
-    padding-top: 20.15px;
+    border-radius: 8px;
+    width: 300px;
+    height: 165px;
   }
   
   nav {
@@ -118,11 +126,10 @@ html, body {
   }
   
 
-  p, li {
+  p,li {
     font-size: 1.5rem;
     line-height: 1.5;
     margin: 0 auto;
-    text-align: center;
     
   }
   .wrapper {
