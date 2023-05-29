@@ -3,11 +3,13 @@
 html, body {
     margin: 0;
     padding: 0;
+
+    background-color: #ededed;
+    
   }
   
   html {
     font-size: 10px;
-    /*background-color: #ededed;*/
   }
   
   body {
@@ -17,48 +19,49 @@ html, body {
     height: 80%;
     min-height: 800px;
   }
+
+
   
   /* || typography */
   
-  h1, h2, li {
+  h1,h2,li {
     font-family: 'Shrikhand';
-    color: #001A1E;
     font-weight: 600;
   }
 
   p {
-    font-family: 'monospace';
-    font-size: 100px;
+    font-family: 'Domine';
+    font-size: 200px;
     font-weight: 200;
-    color: #EDEDED;
-    text-align: center;
+    color: #001A1E;
+    text-align: justify;
   }
 
   
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
-    display: flex;
+    color:#b79683f7;
   }
   
   
   h2 {
     font-size: 3rem;
     text-align: center;
-    background-color: chocolate;
+    color: #001A1E;
   }
   
  
   li {
     line-height: 1.5;
     text-align: center;
+    
   }
   
   /* || header layout */
   
   header {
     margin-bottom: 10px;
-    /*display: flex;*/
     flex-flow: row wrap;
   }
 
@@ -77,8 +80,8 @@ html, body {
   
   header img {
     border-radius: 8px;
-    width: 250px;
-    height: 105px;
+    width: 270px;
+    height: 125px;
   }
   
   nav {
@@ -108,13 +111,16 @@ html, body {
     line-height: 1.7;
     text-transform: uppercase;
     text-decoration: none;
+    
     color: #001A1E;
-    background-color: chocolate;
+  
   }
   
     hr.new1 {
-      background-color: chocolate;
-      border: 1px solid #1D2D40;
+      border: 1.5px solid #1D2D40;
+  }
+  nav :hover{
+    color: darkolivegreen;
   }
   
   /* || main layout */
@@ -146,7 +152,7 @@ html, body {
     flex-direction: column;
     border: 2px dotted rgb(253, 228, 228);
     margin: 25px;
-    background-color: #001A1E;
+    background-color: #b79683f7;
   }
 
   .landing{
@@ -157,3 +163,4 @@ html, body {
   .wrapper div {
     border-radius: 14px;
   }
+
