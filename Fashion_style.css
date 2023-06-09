@@ -4,9 +4,13 @@ html, body {
     margin: 0;
     padding: 0;
 
-    background-color: #ededed;
-    
+    background-image: url(images/Yellow\ Spring.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
   }
+    
+  
   
   html {
     font-size: 10px;
@@ -143,7 +147,7 @@ html, body {
     
   }
   p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     margin: 0 auto;
   }
@@ -155,15 +159,11 @@ html, body {
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 2px dotted rgb(253, 228, 228);
+    border: 2px dotted #b79683f7;
     margin: 25px;
-    background-color: #b79683f7;
+    background-color:rgba(223, 192, 18, 0.892);
   }
 
-  .landing{
-    max-width: 70%;
-    max-height:70%;
-  }
 
   .wrapper div {
     border-radius: 14px;
