@@ -4,10 +4,6 @@ html, body {
     margin: 0;
     padding: 0;
 
-    background-image: url(images/Yellow\ Spring.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
   }
     
   
@@ -22,6 +18,11 @@ html, body {
     margin: 0 auto;
     height: 80%;
     min-height: 800px;
+
+    background-image: url(images/Yellow\ Spring.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
   }
 
 
