@@ -3,40 +3,65 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fayben's Blog</title>
     <link rel="stylesheet" href="Fashion_style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+  </style>
 
   </head>
-
-  <style>
-    .container {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-  
-  img {
-    max-width: 100%;
-    max-height:100%;
-  }
-  
-  .text {
-    font-size: 20px;
-    padding-left: 20px;
-  }
-    </style>
-
   <body>
+
+    
+ <script type="text/javascript">
+
+ var images = ['🌼']
+
+  document.addEventListener("mousemove", function(e){
+    let body = document.querySelector('body');
+    let flower = document.createElement("span");
+    let x = e.offsetX;
+    let y = e.offsetY;
+
+
+    flower.style.left = x+ 'px';
+    flower.style.top = y+ 'px';
+
+    let size = Math.random() * 50;
+
+    let icon = images[Math.floor(Math.random() * images.length)]
+
+    
+    flower.innerText = icon;
+
+    
+
+    body.appendChild(flower);
+
+    setTimeout(function(){
+      flower.remove();
+    },1000)
+
+  })
+
+ </script>
 
 
       <header>
 
       <h1>Fayben Mamo</h1>  <!--Make a logo for header-->
 
-  
+      
       <!--<img class="header img" src="images/Fayben Mamo-logos.jpeg" alt="Fayben's Blog logo"> -->
     
 
@@ -66,11 +91,68 @@
       <article>
 
         <h2>Spring Fashion</h2>
+
+
+
         
         <div class="container">
-            <div class="image">
-                <img src="images/Spring fashion.png">
-            </div>
+            <!--<div class="image">
+                <img src="images/Spring fashion.png">-->
+            <!--Boostrap code below for carousel-->
+
+            <br>
+            <div id="FashionCarousel" class="carousel slide" data-ride="carousel">
+              <!--Indicators-->
+              <ol class="carousel-indicators">
+                <li data-target="#FashionCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#FashionCarousel" data-slide-to="1"></li>
+                <li data-target="#FashionCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                  <img src="images/Spring fashion.png" alt="A collage of my spring fashion inspiration for 2023." width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Spring Collage</h3>
+                    <h6>A collage of my spring fashion inspiration for 2023.</h6>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/Leo Team.png" alt="leo" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Leo</h3>
+                    <h6>This is my star sign and I love the vibe it gives off. It matches with what I was going for in the spring.</h6>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/Background House image.png" alt="house" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Flowers</h3>
+                    <h6>Sage green and white floral print combos are extremely pretty!</h6>
+                  </div>
+                </div>
+            
+              </div>
+
+            <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#FashionCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span> <!--screen readers can see next and previous button text-->
+              </a>
+              <a class="carousel-control-next" href="#FashionCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>   
+          </div>
+
+
+<!--Boostrap code above for carousel-->
+            
             <div class="wrapper">
             <div class="text">
               <p>Now that we’re in spring, almost summer, I’ve realized that I had so many pieces I’m obsessed with and will probably continue to wear in the summer. I’ve been loving the flowy tops and flowy skirt aesthetic, which makes me feel like I am going on a European trip when I’m really not. I’ve been loving the Sambas a lot as another option to converse sneakers. Mini micro skirts are adorable, especially when they’re plaid and pleated. I love an oversized jacket no matter the weather! I’ve also adored the ribbon look in your hair<3.</p>
@@ -81,7 +163,26 @@
       </article>
     </main>
   
-  </body>
+    <style>
+ 
+    
+    img {
+      max-width: 100%;
+      max-height:100%;
+    }
+   
+    .text {
+      font-size: 20px;
+      padding-left: 20px;
+      text-align: right;
+    }
+
+
+      </style>
+
+      
+  
+    </body>
 
 
 </html>

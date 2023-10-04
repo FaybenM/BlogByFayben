@@ -1,8 +1,9 @@
 /* || General setup */
 
-html, body {
+* {                     /*changed from html,body*/
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* added this*/
 
   }
     
@@ -17,16 +18,55 @@ html, body {
     min-width: 800px;
     margin: 0 auto;
     height: 80%;
-    min-height: 800px;
+
+    min-height: 100vh;  /* change to 100vh from 800px*/
 
     background-image: url(images/Yellow\ Spring.png);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
+
+    
   }
 
+/* added this*/
+span {
+position: absolute;
+pointer-events: none;
 
+transition: .5s;
+background-size: cover;
+animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    translate: 0 0;
+    opacity: 0;
+  }
+  10%
+  {
+    opacity: 1;
+  }
+  30%
+  {
+    translate: 0 100px;
+    opacity: 1;
+  }
+  90%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    translate: 0 80px;
+    opacity: 0;
+  }
+}
   
+
+
   /* || typography */
   
   h1,h2,li {
@@ -56,7 +96,16 @@ html, body {
     color: #001A1E;
   }
   
- 
+ h3 {
+color:bisque;
+text-align: center;
+ }
+
+ h6 {
+  color:blanchedalmond;
+  text-align: center;
+ }
+
   li {
     line-height: 1.5;
     text-align: center;
@@ -68,9 +117,13 @@ html, body {
   header {
     margin-bottom: 10px;
     flex-flow: row wrap;
+    align-items: center;
   }
 
+#FashionCarousel {
+  text-align: left;
 
+}
  
   body > * {
     padding: 1%;
