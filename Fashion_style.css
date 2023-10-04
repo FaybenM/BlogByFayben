@@ -1,25 +1,18 @@
 /* || General setup */
 
-* {                     /*changed from html,body*/
+* {                     
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* added this*/
+
 
   }
     
   
   
-  html {
-    font-size: 10px;
-  }
+  
   
   body {
-    width: 80%;
-    min-width: 800px;
-    margin: 0 auto;
-    height: 80%;
-
-    min-height: 100vh;  /* change to 100vh from 800px*/
+ 
 
     background-image: url(images/Yellow\ Spring.png);
     background-repeat: no-repeat;
@@ -69,7 +62,7 @@ animation: animate 1s linear infinite;
 
   /* || typography */
   
-  h1,h2,li {
+  h2{
     font-family: 'Shrikhand';
     font-weight: 600;
   }
@@ -82,13 +75,7 @@ animation: animate 1s linear infinite;
     text-align: justify;
   }
 
-  
-  h1 {
-    font-size: 5rem;
-    text-align: center;
-    color:#b79683f7;
-  }
-  
+ 
   
   h2 {
     font-size: 3rem;
@@ -106,11 +93,7 @@ text-align: center;
   text-align: center;
  }
 
-  li {
-    line-height: 1.5;
-    text-align: center;
-    
-  }
+
   
   /* || header layout */
   
@@ -130,56 +113,8 @@ text-align: center;
   }
   
 
+  
 
-  h1 {
-    flex: 5;
-    text-transform: uppercase;
-  }
-  
-  header img {
-    border-radius: 8px;
-    width: 270px;
-    height: 125px;
-  }
-  
-  nav {
-    height: 50px;
-    flex: 100%;
-    display: flex;
-    padding: 1%;
-  }
-  
-  nav ul {
-    padding: 0;
-    list-style-type: none;
-    flex: 2;
-    display: flex;
-  }
-  
-  nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-  }
-  
-   nav a {
-    display: inline-block;
-    font-size: 1.5rem;
-    height: 3rem;
-    line-height: 1.7;
-    text-transform: uppercase;
-    text-decoration: none;
-    
-    color: #001A1E;
-  
-  }
-  
-    hr.new1 {
-      border: 1.5px solid #1D2D40;
-  }
-  nav :hover{
-    color: darkolivegreen;
-  }
   
   /* || main layout */
   
@@ -195,11 +130,10 @@ text-align: center;
   
 
   li {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 0 auto;
-    
+    font-family: 'Shrikhand';
+    font-size: large;
   }
+
   p {
     font-size: 1.7rem;
     line-height: 1.5;

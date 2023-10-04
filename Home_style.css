@@ -1,13 +1,15 @@
 /* || General setup */
 
-html, body {
+* {
     margin: 0;
     padding: 0;
 
-    background-color: #cfbcbc;
     
   }
   
+  body{
+ background-color: #d5c7c7;
+  }
   
   /* || typography */
   
