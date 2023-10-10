@@ -8,7 +8,7 @@
   }
   
 body{
-  background-color: #d5c7c7;
+  background-color: #823f25 !important;
 }
   
   /* || typography */
@@ -96,7 +96,8 @@ body{
     flex-direction: column;
     border: 2px dotted rgb(253, 228, 228);
     margin: 25px;
-    background-color: #b79683f7;
+    background-color: #b38420;
+    /*background-color: #b79683f7;  #ca6702;*/
   }
 .carousel-caption{
   align-items: center;
