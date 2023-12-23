@@ -9,8 +9,6 @@
     
   
   
-  
-  
   body {
  
 
@@ -69,16 +67,17 @@ animation: animate 1s linear infinite;
 
   p {
     font-family: 'Domine';
-    font-size: 200px;
     font-weight: 200;
     color: #001A1E;
     text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0 auto;
   }
 
  
   
   h2 {
-    font-size: 3rem;
     text-align: center;
     color: #001A1E;
   }
@@ -97,16 +96,7 @@ text-align: center;
   
   /* || header layout */
   
-  header {
-    margin-bottom: 10px;
-    flex-flow: row wrap;
-    align-items: center;
-  }
 
-#FashionCarousel {
-  text-align: left;
-
-}
  
   body > * {
     padding: 1%;
@@ -134,11 +124,7 @@ text-align: center;
     font-size: large;
   }
 
-  p {
-    font-size: 1.7rem;
-    line-height: 1.5;
-    margin: 0 auto;
-  }
+
   .wrapper {
     align-items: center;
     min-height: 85%;

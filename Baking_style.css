@@ -8,9 +8,7 @@
     
   
   
-  html {
-    font-size: 10px;
-  }
+  
   
   body {
     width: 80%;
@@ -29,70 +27,45 @@
   
   /* || typography */
   
-  h1,h2,li {
+  h2 {
     font-family: 'Shrikhand';
+    font-size: 3rem;
     font-weight: 600;
+    text-align: center;
+    color: #001A1E;
   }
 
   p {
     font-family: 'Domine';
-    font-size: 200px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 auto;
     font-weight: 200;
     color: #001A1E;
     text-align: justify;
+    display:block;
   }
 
-  
-  h1 {
-    font-size: 5rem;
-    text-align: center;
-    color:#b79683f7;
-  }
-  
-  
-  h2 {
-    font-size: 3rem;
-    text-align: center;
-    color: #001A1E;
-  }
+    
   
  
   li {
-    line-height: 1.5;
-    text-align: center;
+    font-family: 'Shrikhand';
+    font-weight: large;
     
   }
   
   /* || header layout */
   
-  header {
-    margin-bottom: 10px;
-    flex-flow: row wrap;
-  }
-
-
  
+
   body > * {
     padding: 1%;
   }
   
 
-
-  h1 {
-    flex: 5;
-    text-transform: uppercase;
-  }
-  
-  header img {
-    border-radius: 8px;
-    width: 270px;
-    height: 125px;
-  }
-  
-
   
   /* || main layout */
-  
   main {
     display: flex;
     flex: 1;
@@ -102,19 +75,9 @@
   article{
     flex: 4; 
   }
-  
+ 
 
-  li {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 0 auto;
-    
-  }
-  p {
-    font-size: 1.7rem;
-    line-height: 1.5;
-    margin: 0 auto;
-  }
+
   .wrapper {
     align-items: center;
     min-height: 85%;

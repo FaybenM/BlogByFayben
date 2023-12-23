@@ -25,8 +25,8 @@ body{
 
   p {
     font-family: 'Domine';
-    font-size: 1.1rem;
-    font-weight: 200;
+    font-size: .8rem;
+    font-weight: 300;
     color: #001A1E;
     text-align: justify;
     line-height: 1.5;
@@ -35,8 +35,18 @@ body{
     
   }
 
+span{
+  font-family: 'Domine';
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #001A1E;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0 auto;
+    display:block;
+}
   
-  h5 {
+  h6 {
     color:#b79683f7;
   }
   
@@ -52,8 +62,6 @@ body{
   
   /* || header layout */
   
- 
-
 
  
   body > * {
@@ -70,6 +78,19 @@ body{
   img {
     padding: 10px;
   }
+
+
+  /* || Nav bar */
+
+.nav-link {
+  transition: all 0.2s;
+}
+  .nav-link:hover {
+    text-decoration: underline;
+    background-color: #2f4e71;
+    
+}
+
 
 
   /* || main layout */
@@ -100,9 +121,9 @@ body{
   }
 .carousel-caption{
   align-items: center;
-  min-height: 5%;
+  height: 30%;
   display: flex;
-  width: 50%;
+  width: 30%;
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
