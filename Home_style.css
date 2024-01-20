@@ -8,7 +8,11 @@
   }
   
 body{
-  background-color: #823f25 !important;
+    background-image: url(images/y2k\ journal.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+
 }
   
   /* || typography */
@@ -24,7 +28,7 @@ body{
   }
 
   p {
-    font-family: 'Domine';
+    font-family: "itc-american-typewriter"; /* 'Domine';*/
     font-size: .8rem;
     font-weight: 300;
     color: #001A1E;
@@ -36,17 +40,17 @@ body{
   }
 
 span{
-  font-family: 'Domine';
+    font-family: 'itc-american-typewriter';
     font-size: 1.1rem;
     font-weight: 200;
     color: #001A1E;
     text-align: justify;
     line-height: 1.5;
     margin: 0 auto;
-    display:block;
+   
 }
   
-  h6 {
+  h5 {
     color:#b79683f7;
   }
   
@@ -84,13 +88,15 @@ span{
 
 .nav-link {
   transition: all 0.2s;
+  color: #ffffff !important; /* Change the font color */ 
+  font-family: serif;
 }
   .nav-link:hover {
     text-decoration: underline;
-    background-color: #2f4e71;
+    -webkit-tap-highlight-color: transparent !important;
+   
     
 }
-
 
 
   /* || main layout */
@@ -106,22 +112,10 @@ span{
   }
   
 
-  .wrapper {
-    align-items: center;
-    min-height: 85%;
-    display: flex;
-    width: 95%;
-    justify-content:flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: 2px dotted rgb(253, 228, 228);
-    margin: 25px;
-    background-color: #b38420;
-    
-  }
+ 
 .carousel-caption{
   align-items: center;
-  height: 30%;
+  height: 15%;
   display: flex;
   width: 30%;
   justify-content: flex-start;
@@ -130,11 +124,39 @@ span{
   border: 2px dotted rgb(253, 228, 228);
   margin: 25px;
   background-color: rgb(253, 228, 228);
+  font-family: 'itc-american-typewriter'
 }
 
 
  
-  .wrapper div {
-    border-radius: 14px;
-  }
+  
 
+/*pop up window*/
+body {
+  margin: 0;
+  font-family: 'Serif', sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+
+}
+
+.image {
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: 100%; /* Maintain the image's aspect ratio */
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00ff00; /* Text color */
+  font-family: sans-serif;
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Adjust the font weight */
+  text-align: center;
+}

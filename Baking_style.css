@@ -11,16 +11,12 @@
   
   
   body {
-    width: 80%;
-    min-width: 800px;
-    margin: 0 auto;
-    height: 80%;
-    min-height: 800px;
+   
 
     background-image: url(images/fresa_bakingBackground.png);
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover;
+    background-size: 100% 100%;
   }
 
 
@@ -29,7 +25,6 @@
   
   h2 {
     font-family: 'Shrikhand';
-    font-size: 3rem;
     font-weight: 600;
     text-align: center;
     color: #001A1E;
@@ -37,13 +32,13 @@
 
   p {
     font-family: 'Domine';
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     margin: 0 auto;
     font-weight: 200;
     color: #001A1E;
     text-align: justify;
-    display:block;
+    margin: 0 auto;
   }
 
     

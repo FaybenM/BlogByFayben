@@ -1,0 +1,141 @@
+/* || General setup */
+
+*  {
+    margin: 0;
+    padding: 0;
+
+    
+  }
+  
+body{
+  background-color: #823f25 !important;
+}
+  
+  /* || typography */
+  
+  h2 {
+    font-family: 'Shrikhand';
+    font-weight: 600;
+  }
+
+  li {
+    font-family: 'Shrikhand';
+    font-size: large;
+  }
+
+  p {
+    font-family: "itc-american-typewriter"; /* 'Domine';*/
+    font-size: .8rem;
+    font-weight: 300;
+    color: #001A1E;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0 auto;
+    display:block;
+    
+  }
+
+span{
+    font-family: 'itc-american-typewriter';
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #001A1E;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0 auto;
+    display:block;
+}
+  
+  h6 {
+    color:#b79683f7;
+  }
+  
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #001A1E;
+  }
+  
+ 
+  
+  
+  /* || header layout */
+  
+
+ 
+  body > * {
+    padding: 1%;
+  }
+  
+
+
+  h1 {
+    flex: 5;
+    text-transform: uppercase;
+  }
+  
+  img {
+    padding: 10px;
+  }
+
+
+  /* || Nav bar */
+
+.nav-link {
+  transition: all 0.2s;
+}
+  .nav-link:hover {
+    text-decoration: underline;
+    -webkit-tap-highlight-color: transparent !important;
+    /*background-color: #2f4e71;*/
+    
+}
+
+
+
+  /* || main layout */
+  
+  main {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  article{
+    flex: 4; 
+  }
+  
+
+  .wrapper {
+    align-items: center;
+    min-height: 85%;
+    display: flex;
+    width: 95%;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px dotted rgb(253, 228, 228);
+    margin: 25px;
+    background-color: #b38420;
+    
+  }
+.carousel-caption{
+  align-items: center;
+  height: 30%;
+  display: flex;
+  width: 30%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px dotted rgb(253, 228, 228);
+  margin: 25px;
+  background-color: rgb(253, 228, 228);
+}
+
+
+ 
+  .wrapper div {
+    border-radius: 14px;
+  }
+

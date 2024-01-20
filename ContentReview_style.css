@@ -1,21 +1,15 @@
 /* || General setup */
 
-html, body {
+* {
   margin: 0;
   padding: 0;
   
 }
 
-html {
-  font-size: 10px;
-}
+
 
 body {
-  width: 80%;
-  min-width: 800px;
-  margin: 0 auto;
-  height: 80%;
-  min-height: 800px;
+
 
   background-image: url(images/goodnight\ moon_treats.png);
   background-repeat: no-repeat;
@@ -25,7 +19,12 @@ body {
 
 
 
-/* || typography */
+/* || typography
+
+html {
+  font-size: 10px;
+}
+*/
 
 h1,h2,li {
   font-family: 'Shrikhand';

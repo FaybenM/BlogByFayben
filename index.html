@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .image {
+            width: 100%; /* Ensure the image takes the full width of its container */
+            height: auto; /* Maintain the image's aspect ratio */
+            display: block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff; /* Text color */
+            font-size: 24px; /* Adjust the font size */
+            font-weight: bold; /* Adjust the font weight */
+            text-align: center;
+        }
+    </style>
+    <title>Text Overlapping Image</title>
+</head>
+<body>
+
+<!-- Your content goes here -->
+
+<div class="container">
+    <img src="images/goodnight moon_treats.png" alt="Your Image" class="image">
+    <div class="text-overlay">Your Text Here</div>
+</div>
+
+</body>
+</html>
