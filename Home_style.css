@@ -1,22 +1,28 @@
 /* || General setup */
 
-*  {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body  {
+   
+    height: 100%;
     margin: 0;
     padding: 0;
-
     
   }
   
-body{
-    background-image: url(images/y2k\ journal_purple.png) !important;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;
-    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
-    position: relative;
-    z-index: 1; /* Set a higher z-index for the body */
-    overflow: visible;
-    margin:0;
+body{ 
+  background-size: cover;
+  background-image: url(images/y2k\ journal_purple.png);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  
 }
   
   /* || typography */
@@ -26,6 +32,8 @@ body{
   h2 {
     font-family: 'Shrikhand';
     font-weight: 600;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
+
   }
 
   li {
@@ -58,6 +66,7 @@ span{
   
   h5 {
     color:#f6a6f0f7;
+    font-family: sans-serif;
   }
   
   
@@ -68,28 +77,9 @@ span{
     /*color: #001A1E;*/
   }
   
-  .wrapper {
-    align-items: center;
-    min-height: 85%;
-    display: flex;
-    width: 100%;
-    padding:20px;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: 1px dotted #fff;
-    margin: 25px;
-    background-color: #66407B;
-  }
+  
 
-  .wrapper span{
-    margin:0;
-  }
-
-  .wrapper div {
-    border-radius: 14px;
-  }
+  
   
   
   /* || header layout */
@@ -98,6 +88,8 @@ span{
     display: flex;
     align-items: center;
     padding: 10px;
+    position: relative;
+    z-index: 1001;
   }
   
   
@@ -122,17 +114,21 @@ span{
 
   /* Logo style */
 
-.logo {
-  margin-right: auto;
-  z-index: 2; /* Higher z-index */
-}
 
-.logoTwo {
+/*
+  .logo 
+    margin-right: auto;
+    z-index: 2; /* Higher z-index */
+  
+/*
+.logoTwo 
     margin: auto;
     z-index: 2; /* Higher z-index */
-    margin-left: 15em; /* Adjust left margin */
+   /* margin-left: 15em; /* Adjust left margin */
   
-}
+
+
+
 /* Nav bar style */
 nav {
   z-index: 2; /* Higher z-index */
@@ -149,7 +145,6 @@ nav {
   nav {
     display: flex;
     align-items: center;
-  
     
 }
 
@@ -176,7 +171,7 @@ nav a {
   transition: all 0.2s;
   color: #ffffff !important; /* Change the font color */ 
   font-family: serif;
-  
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
 }
   .nav-link:hover {
     text-decoration: underline;
@@ -202,6 +197,11 @@ nav a {
 #carouselId {
   height: 100vh;
   margin: 0;
+  position:absolute;
+  top: 0;
+  left:0;
+  right:0;
+  width:auto;
 }
 
 .carousel-caption {
@@ -286,11 +286,7 @@ body {
   font-family: 'Serif', sans-serif;
 }
 
-.container {
-  position: relative;
-  max-width: 100%;
 
-}
 
 .image {
   width: 100%; /* Ensure the image takes the full width of its container */
@@ -308,4 +304,70 @@ body {
   font-size: 24px; /* Adjust the font size */
   font-weight: bold; /* Adjust the font weight */
   text-align: center;
+}
+
+.navbar {
+  background-color: transparent; /* Make the navbar transparent */
+}
+
+.content-container {
+  position: relative;
+  padding-top: 800px; /* Adjust as needed */
+}
+
+
+.tiktok-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between videos*/
+}
+
+.tiktok-video {
+  flex: 1;
+  min-width: calc(50% - 5px); /* Adjust the width of each video container */
+  max-width: calc(50% - 5px); /* Adjust the width of each video container */
+}
+
+
+/* Reset default margin and padding for the footer */
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the copyright text */
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Style the social media icons container */
+#site-footer {
+  text-align: center;
+}
+
+/* Style the individual social media icons */
+.footer-social-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-menu li {
+  margin: 0 10px;
+}
+
+.footer-social-menu a {
+  display: inline-block;
+  color: inherit;
+}
+
+/* Ensure social media icons are the same size */
+.footer-social-menu svg {
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
 }

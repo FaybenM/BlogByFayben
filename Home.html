@@ -3,8 +3,6 @@
 
 <head>
   <title>Fayben's Blog</title>
-  <link rel="stylesheet" href="Home_style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,11 +11,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <!-- TikTok Script -->
+<script async src="https://www.tiktok.com/embed.js"></script>
 
+    <link rel="stylesheet" href="Home_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    
    
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
    
     
 <!-- Bootstrap JS and Popper.js -->
@@ -27,6 +28,53 @@ crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
 crossorigin="anonymous"></script>
+
+
+
+
+
+<style>
+
+body {
+      background-color: #66407B !important;
+    }
+
+    .tiktok-embed {
+  background-color: transparent;
+}
+
+  /* Add this style to create a border box around the carousel */
+  .carousel-inner {
+    box-sizing: border-box;
+    border: 2px dotted #543465; /* Set border color */
+    background-color: #66407B; /* Set background color */
+    overflow: hidden; /* Hide overflowing content */
+    padding: 20px; /* Optionally, add some padding to the carousel container */
+  }
+
+
+  /* Add border to the common container */
+  .common-container {
+  box-sizing: border-box;
+  border: 2px dotted #543465;
+  background-color: #66407B;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px 0; /* Add margin to create space between containers */
+}
+
+.container iframe {
+  width: 100%;
+  height: 400px;
+}
+
+
+  .custom-navbar {
+    background-color: #66407B; /* Set background color for nav bar */
+  }
+
+</style>
+
 
     
   </head>
@@ -41,15 +89,20 @@ crossorigin="anonymous"></script>
 -->
 
     
- <!-- Logo -->
- <div class="logo">
-  <img src="images/FM_Logo.png" width="150" height="150" alt="Fayben's Blog logo">
-</div>
-    
+ <!-- Logo  -->
 
-    <!-- Nav Bar "navbar-light or -dark" -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-       
+ <div class="logo">
+  <img src="images/FaybenBlogLogo.png" width="160" height="160" alt="Fayben's Blog logo">
+</div>
+   
+    <!-- Nav Bar "navbar-light or -dark" / add custom-navbar after dark to give background color-->
+    <nav class="navbar navbar-expand-sm navbar-dark"> 
+
+
+
+      <div class="container-fluid">
+        
+
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           
            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
@@ -75,6 +128,8 @@ crossorigin="anonymous"></script>
                     <a class="nav-link" href="ContentReview.html">Content Reviews</a>
                 </li>
 
+
+
             </ul>
             
             <!-- Search Button -->
@@ -83,27 +138,25 @@ crossorigin="anonymous"></script>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form> -->
         </div>
+        </div>
     </nav>
 
-    <div class="logoTwo">
-      <img src="images/FM_Logo.png" width="150" height="150" alt="Fayben's Blog logo">
+    <!-- 
+      <div class="logoTwo">
+      <img src="images/FMlogo.png" width="150" height="150" alt="Fayben's Blog logo">
     </div>
-        
+  -->
+
   </header>
 
   <main>
     <article>
 
-        
-          
-        
-          
-          <br>
-          <br />
-
 
       
 <!--carousel below-->
+<div class="carousel-container">
+
 <div id="carouselId" class="carousel slide impact w-4872px" data-bs-ride="carousel">
   <ol class="carousel-indicators">
     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
@@ -114,17 +167,17 @@ crossorigin="anonymous"></script>
   </ol>
   <div class="carousel-inner impact" role="listbox">
     <div class="carousel-item active">
-      <img src="images/Landing ID card.png" class="w-100 d-block h-100" alt="First slide">
+      <img src="images/Landing ID card.png" class="w-100 d-block h-100" alt="First slide" style="background-size: cover;">
       <div class="carousel-caption d-md-block">
         <h5>An introduction of me through a collage!</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/tini wallpaper .png" class="w-100 d-block" alt="Second slide">
+      <img src="images/tini wallpaper .png" class="w-100 d-block" alt="Second slide" style="background-size: cover;">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Tini is one of my favorite latin artists. Check her out!</h5>
+          <h5>Tini is one of my favorite latin artists. Check her out!</h5>
       </div>
-    </div>
+  </div>  
     <div class="carousel-item">
       <img src="images/guts - olivia rodrigo.png" class="w-100 d-block" alt="Third slide">
       <div class="carousel-caption d-none d-md-block">
@@ -154,32 +207,87 @@ crossorigin="anonymous"></script>
     </button>
 </div>
 
+</div>
 <!--carousel above-->
+<div class="content-container">
 
-<div class="container">         
+  <div class="common-container">
+
+     
+
 <div class="wrapper">         
 <h2>Welcome</h2>
+</div>
+<div class="container"> 
 <span>     
 Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to create a blog since the 2013 YouTube days and hearing creators talk about their own. Now I finally got myself to actually follow through with it. This space will pretty much include a whole bunch of random interests I have in one website. I wanna share my personal style and fashion inspiration, some baking recipes (or my attempt at baking lmao), my dream home inspiration (pulled up from pinterest most likely), and lastly my take on different music/shows/movies I’ve been watching. I hope you enjoy scrolling!♡ ͎.
-
 </span>
-
 </div>
+
 </div>
   
 
-    <div class="container">
-      <img src="images/y2kPopUp.jpeg" alt="y2k Image" width="20" height="50" class="image">
-      <div class="text-overlay">Keep Scrolling
-      </div>
+
+<div class="tiktok-container">
+  <div class="tiktok-video">
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ohheyfayy/video/7264693454729383214" data-video-id="7264693454729383214" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ohheyfayy" href="https://www.tiktok.com/@ohheyfayy?refer=embed">@ohheyfayy</a> Part 6 | Finishing up with the set up for my fairy tea party <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="afternoontea" target="_blank" href="https://www.tiktok.com/tag/afternoontea?refer=embed">#afternoontea</a> <a title="fairyparty" target="_blank" href="https://www.tiktok.com/tag/fairyparty?refer=embed">#fairyparty</a> <a title="fairycore" target="_blank" href="https://www.tiktok.com/tag/fairycore?refer=embed">#fairycore</a> <a title="fairy" target="_blank" href="https://www.tiktok.com/tag/fairy?refer=embed">#fairy</a> <a title="afternoonteaparty" target="_blank" href="https://www.tiktok.com/tag/afternoonteaparty?refer=embed">#afternoonteaparty</a> <a title="settingup" target="_blank" href="https://www.tiktok.com/tag/settingup?refer=embed">#settingup</a> <a title="hosting" target="_blank" href="https://www.tiktok.com/tag/hosting?refer=embed">#hosting</a> <a title="diybirthdaydecor" target="_blank" href="https://www.tiktok.com/tag/diybirthdaydecor?refer=embed">#diybirthdaydecor</a> <a title="diydecor" target="_blank" href="https://www.tiktok.com/tag/diydecor?refer=embed">#diydecor</a> <a title="birthdaypartyideas" target="_blank" href="https://www.tiktok.com/tag/birthdaypartyideas?refer=embed">#birthdaypartyideas</a> <a title="25thbirthday" target="_blank" href="https://www.tiktok.com/tag/25thbirthday?refer=embed">#25thbirthday</a> <a title="25thbirthdayideas" target="_blank" href="https://www.tiktok.com/tag/25thbirthdayideas?refer=embed">#25thbirthdayideas</a> <a target="_blank" title="♬ P.I.Tchaikovsky, Swan Lake (Swan Theme) - AllMusicGallery" href="https://www.tiktok.com/music/PITchaikovsky-Swan-Lake-Swan-Theme-7018762094266812417?refer=embed">♬ P.I.Tchaikovsky, Swan Lake (Swan Theme) - AllMusicGallery</a> </section> </blockquote>
+</div>
+
+<div class="tiktok-video">  
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ohheyfayy/video/7325296243079531818" data-video-id="7325296243079531818" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ohheyfayy" href="https://www.tiktok.com/@ohheyfayy?refer=embed">@ohheyfayy</a> sexy is on constant repeat 🩰⛓️ <a title="meangirls" target="_blank" href="https://www.tiktok.com/tag/meangirls?refer=embed">#meangirls</a> <a title="meangirlsmusical" target="_blank" href="https://www.tiktok.com/tag/meangirlsmusical?refer=embed">#meangirlsmusical</a> <a title="meangirlsmovie" target="_blank" href="https://www.tiktok.com/tag/meangirlsmovie?refer=embed">#meangirlsmovie</a> <a title="meangirlsmusicalmovie" target="_blank" href="https://www.tiktok.com/tag/meangirlsmusicalmovie?refer=embed">#meangirlsmusicalmovie</a> <a title="reginageorge" target="_blank" href="https://www.tiktok.com/tag/reginageorge?refer=embed">#reginageorge</a> <a title="reneerapp" target="_blank" href="https://www.tiktok.com/tag/reneerapp?refer=embed">#reneerapp</a> <a title="avantikavandanapu" target="_blank" href="https://www.tiktok.com/tag/avantikavandanapu?refer=embed">#avantikavandanapu</a> <a title="auilicravalho" target="_blank" href="https://www.tiktok.com/tag/auilicravalho?refer=embed">#auilicravalho</a> <a title="movietheater" target="_blank" href="https://www.tiktok.com/tag/movietheater?refer=embed">#movietheater</a> <a title="musical" target="_blank" href="https://www.tiktok.com/tag/musical?refer=embed">#musical</a> <a title="broadwaymusicals" target="_blank" href="https://www.tiktok.com/tag/broadwaymusicals?refer=embed">#broadwaymusicals</a> <a title="someonegetshurt" target="_blank" href="https://www.tiktok.com/tag/someonegetshurt?refer=embed">#someonegetshurt</a> <a title="meettheplastics" target="_blank" href="https://www.tiktok.com/tag/meettheplastics?refer=embed">#meettheplastics</a> <a title="acautionarytale" target="_blank" href="https://www.tiktok.com/tag/acautionarytale?refer=embed">#acautionarytale</a> <a title="capcut" target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank" title="♬ Regina George - Mean Girls" href="https://www.tiktok.com/music/Regina-George-102962775?refer=embed">♬ Regina George - Mean Girls</a> </section> </blockquote>
    </div>
 
-          
-      </article>
+   <div class="tiktok-video">
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ohheyfayy/video/7289472063083957547" data-video-id="7289472063083957547" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ohheyfayy" href="https://www.tiktok.com/@ohheyfayy?refer=embed">@ohheyfayy</a> Wednesday costume idea 🖤<a title="wednesdayaddams" target="_blank" href="https://www.tiktok.com/tag/wednesdayaddams?refer=embed">#wednesdayaddams</a> <a title="halloween" target="_blank" href="https://www.tiktok.com/tag/halloween?refer=embed">#halloween</a> <a title="halloween2023" target="_blank" href="https://www.tiktok.com/tag/halloween2023?refer=embed">#halloween2023</a> <a title="halloweencostume" target="_blank" href="https://www.tiktok.com/tag/halloweencostume?refer=embed">#halloweencostume</a> <a title="halloweencostumeideas" target="_blank" href="https://www.tiktok.com/tag/halloweencostumeideas?refer=embed">#halloweencostumeideas</a> <a title="wednesday" target="_blank" href="https://www.tiktok.com/tag/wednesday?refer=embed">#wednesday</a> <a title="fridaythe13th" target="_blank" href="https://www.tiktok.com/tag/fridaythe13th?refer=embed">#fridaythe13th</a> <a title="wednesdayaddamscostume" target="_blank" href="https://www.tiktok.com/tag/wednesdayaddamscostume?refer=embed">#wednesdayaddamscostume</a> <a title="wednesdayaddamscostumes" target="_blank" href="https://www.tiktok.com/tag/wednesdayaddamscostumes?refer=embed">#wednesdayaddamscostumes</a> <a target="_blank" title="♬ original sound  - Netflix Philippines" href="https://www.tiktok.com/music/original-sound-Netflix-Philippines-7171793053387213569?refer=embed">♬ original sound  - Netflix Philippines</a> </section> </blockquote> 
+</div>
+
+<div class="tiktok-video">
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ohheyfayy/video/7197957024334810411" data-video-id="7197957024334810411" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ohheyfayy" href="https://www.tiktok.com/@ohheyfayy?refer=embed">@ohheyfayy</a> wanted to make a mocktail for the girlies 💋💌 <a title="galentinesday" target="_blank" href="https://www.tiktok.com/tag/galentinesday?refer=embed">#galentinesday</a> <a title="mocktails" target="_blank" href="https://www.tiktok.com/tag/mocktails?refer=embed">#mocktails</a> <a title="valentinesday" target="_blank" href="https://www.tiktok.com/tag/valentinesday?refer=embed">#valentinesday</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a target="_blank" title="♬ Dream - The Pied Pipers" href="https://www.tiktok.com/music/Dream-6708817992265762818?refer=embed">♬ Dream - The Pied Pipers</a> </section> </blockquote> 
+</div>
+
+</div>
+
+</article>
   </main>
   <footer>
     <!-- place footer here -->
+   
+      <p>&copy; 2023 Fayben's Blog. All rights reserved.</p>
+<!-- social media footer inspo by olivia rodrigo's website-->
+
+      <div id="site-footer">
+        <div class="footer-links">
+        <div class="flex flex-wrap">
+            <div class="footer-socials flex">
+                <div class="menu-social-container"><ul id="menu-social-1" class="footer-social-menu flex"><li class="instagram menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item"><a href="https://www.instagram.com/ohheyfayy" onclick="umgAAL.track.fanpage_link( umgAAL.standardized.SOCIAL_PLATFORMS.INSTAGRAM, 'https://www.instagram.com/ohheyfayy' );" target="_blank" data-umga-social-link="" data-umga-social-link-platform="Instagram" data-umga-social-link-location="Footer"><svg class="w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 47.41" aria-labelledby="instagramTitle instagramDesc" role="img">
+                <title id="instagramTitle">Instagram</title>
+                <desc id="instagramDesc">Instagram logo</desc>
+                <path d="M23.91.36c3.69,0,7.36-.17,11,0,7.67.43,12.63,5.31,12.89,13,.24,7,.24,14,0,21-.25,7.94-5.22,12.91-13.12,13.17-7.05.24-14.13.25-21.18,0C5.5,47.26.7,42.73.28,34.75a214.41,214.41,0,0,1,0-21.81C.69,5.3,5.41.9,13.12.41c3.6-.22,7.2,0,10.79,0Zm-.08,43v0c3.81,0,7.64.21,11.4-.06,4.75-.33,7.86-3,8.09-7.71.38-7.75.34-15.54,0-23.29a7.38,7.38,0,0,0-7.39-7.41c-7.9-.34-15.82-.36-23.72,0C7.66,5,4.85,8,4.64,12.53,4.3,20,4.23,27.5,4.57,35c.24,5.32,3.37,8,8.68,8.35C16.77,43.49,20.3,43.33,23.83,43.33ZM36.31,24.05A12.32,12.32,0,1,1,24.14,11.78,12.32,12.32,0,0,1,36.31,24.05Zm-4.29,0A7.93,7.93,0,0,0,24.2,16h0A8,8,0,1,0,32,24.09v0ZM36.78,8.42a2.64,2.64,0,0,0-2.7,2.79A2.59,2.59,0,0,0,36.75,14a2.8,2.8,0,1,0,.37-5.58h-.34Z" transform="translate(0 -0.3)"></path>
+            </svg></a></li>
+
+
+            <li class="tiktok menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item">
+              <a href="https://www.tiktok.com/@ohheyfayy" target="_blank" data-umga-social-link="" data-umga-social-link-platform="TikTok" data-umga-social-link-location="Footer">
+                
+                <svg class="w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-labelledby="tikTokTitle tikTokDesc" role="img">
+                  <title id="tikTokTitle">TikTok</title>
+                  <desc id="tikTokDesc">TikTok logo</desc>
+                  <path d="M24 48c-13.254 0-24-10.746-24-24s10.746-24 24-24 24 10.746 24 24-10.746 24-24 24zm0-44c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zM31 16c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zM17 16c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zM24 12c-3.312 0-6 2.688-6 6s2.688 6 6 6 6-2.688 6-6-2.688-6-6-6z"/>
+                </svg>
+              </a>
+            </li>
+          
+          
+
+
+</ul></div>            </div>
+                                  
+
+ 
+    
   </footer>
+
+</div> 
 
 <!-- Snow falling-->
 <div id="snow"></div>
@@ -263,8 +371,7 @@ Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to crea
 
 <!-- end of snow code-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  
 
 
   <!-- Bootstrap JavaScript Libraries -->
@@ -275,6 +382,9 @@ Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to crea
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
+
+
 </body>
 
 </html>
