@@ -40,6 +40,9 @@ body{
     font-family: 'Shrikhand';
     font-size: large;
   }
+  p{
+    color:#000;
+  }
 /*
   p {
     font-family: "itc-american-typewriter";  // 'Domine'; //
@@ -78,7 +81,16 @@ span{
   }
   
   
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ab3b86;
+    font-family: 'Shrikhand';
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* Text outline with black color */
 
+    /*color: #001A1E;*/
+  }
   
   
   
@@ -171,7 +183,7 @@ nav a {
   transition: all 0.2s;
   color: #ffffff !important; /* Change the font color */ 
   font-family: serif;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
+  text-shadow: -1px -1px 0 #ab3b86, 1px -1px 0 #ab3b86, -1px 1px 0 #ab3b86, 1px 1px 0 #ab3b86; /* Text outline with black color */
 }
   .nav-link:hover {
     text-decoration: underline;
@@ -206,7 +218,7 @@ nav a {
 
 .carousel-caption {
   position: absolute;
-  top: 80%;
+  top: 77%;
   left: 0%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -294,7 +306,8 @@ body {
   display: block;
 }
 
-.text-overlay {
+
+.text-overlay {     /*unused text-overlay css code */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -312,9 +325,13 @@ body {
 
 .content-container {
   position: relative;
-  padding-top: 800px; /* Adjust as needed */
+  padding-top: 900px; /* Adjust as needed */
 }
 
+.content-container2 {
+  position: relative;
+  padding-top: 200px; /* Adjust as needed */
+}
 
 .tiktok-container {
   display: flex;
@@ -370,4 +387,31 @@ footer p {
 .footer-social-menu svg {
   width: 30px; /* Adjust the size as needed */
   height: auto;
+}
+
+
+a {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+a:hover::after {
+  content: attr(title);
+  color: #fff; /* Tooltip text color */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
+  border-radius: 4px; /* Optional: Round the tooltip corners */
+  padding: 8px; /* Optional: Adjust padding for better appearance */
+  position: absolute;
+  bottom: 50%; /* Position above the link */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+a:hover::after {
+  opacity: 1;
 }
