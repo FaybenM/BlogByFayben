@@ -13,6 +13,7 @@ html, body  {
     padding: 0;
     
   }
+ 
   
 body{ 
   background-size: cover;
@@ -20,8 +21,6 @@ body{
   background-repeat:no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
   
 }
   
@@ -87,7 +86,7 @@ span{
     color: #ab3b86;
     font-family: 'Shrikhand';
     font-weight: 600;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* Text outline with black color */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* Text outline with white color */
 
     /*color: #001A1E;*/
   }
@@ -117,9 +116,7 @@ span{
     text-transform: uppercase;
   }
   
-  img {
-    padding: 10px;
-  }
+ 
 
 
   /* || Nav bar */
@@ -144,20 +141,11 @@ span{
 /* Nav bar style */
 nav {
   z-index: 2; /* Higher z-index */
-}
-
-nav {
   margin: 0 auto; /* Center horizontally */
-}
-nav {
   margin-right: auto;
   margin-left: 17em; /* Adjust left margin */
-}
-
-  nav {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -183,7 +171,7 @@ nav a {
   transition: all 0.2s;
   color: #ffffff !important; /* Change the font color */ 
   font-family: serif;
-  text-shadow: -1px -1px 0 #ab3b86, 1px -1px 0 #ab3b86, -1px 1px 0 #ab3b86, 1px 1px 0 #ab3b86; /* Text outline with black color */
+  text-shadow: -1px -1px 0 #ab3b86, 1px -1px 0 #ab3b86, -1px 1px 0 #ab3b86, 1px 1px 0 #ab3b86; /* Text outline with pink color */
 }
   .nav-link:hover {
     text-decoration: underline;
@@ -216,17 +204,6 @@ nav a {
   width:auto;
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 77%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  
-
-  padding: 20px; /* Adjust padding */
-  border-radius: 10px; /* Add rounded corners */
-}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -241,6 +218,10 @@ nav a {
 }
 
 .carousel-caption {
+  top: 77%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px; /* Add rounded corners */
+
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -293,18 +274,10 @@ nav a {
 }*/
 
 /*pop up window*/
-body {
-  margin: 0;
-  font-family: 'Serif', sans-serif;
-}
 
 
 
-.image {
-  width: 100%; /* Ensure the image takes the full width of its container */
-  height: 100%; /* Maintain the image's aspect ratio */
-  display: block;
-}
+
 
 
 .text-overlay {     /*unused text-overlay css code */
@@ -319,9 +292,7 @@ body {
   text-align: center;
 }
 
-.navbar {
-  background-color: transparent; /* Make the navbar transparent */
-}
+
 
 .content-container {
   position: relative;
@@ -341,8 +312,8 @@ body {
 
 .tiktok-video {
   flex: 1;
-  min-width: calc(50% - 5px); /* Adjust the width of each video container */
-  max-width: calc(50% - 5px); /* Adjust the width of each video container */
+  min-width: calc(70% - 5px); /* Adjust the width of each video container */
+  max-width: calc(70% - 5px); /* Adjust the width of each video container */
 }
 
 
@@ -389,29 +360,3 @@ footer p {
   height: auto;
 }
 
-
-a {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-a:hover::after {
-  content: attr(title);
-  color: #fff; /* Tooltip text color */
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
-  border-radius: 4px; /* Optional: Round the tooltip corners */
-  padding: 8px; /* Optional: Adjust padding for better appearance */
-  position: absolute;
-  bottom: 50%; /* Position above the link */
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Show tooltip on hover */
-a:hover::after {
-  opacity: 1;
-}

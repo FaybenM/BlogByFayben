@@ -14,6 +14,8 @@
     <!-- TikTok Script -->
 <script async src="https://www.tiktok.com/embed.js"></script>
 
+
+
     <link rel="stylesheet" href="Home_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     
@@ -37,11 +39,14 @@ crossorigin="anonymous"></script>
 
 body {
       background-color: #66407B !important;
-  
+
     }
 
 
     .tiktok-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       margin: auto;
     z-index: 2; /* Higher z-index */
    margin-left: 15em; /* Adjust left margin */
@@ -75,34 +80,41 @@ body {
 }
 
 
-  .custom-navbar {
-    background-color: #66407B; /* Set background color for nav bar */
-  }
 
   /* Container for the video and image */
-  .contains {
-      position: relative;
-      width: 100%;
-      max-width: 600px; /* Adjust as needed */
-      margin: auto;
-    }
+  
 
-    /* Style for the image */
-    .background-image {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+    .contains {
+            position: relative;
+            width: 40%;
+            padding:5px;
+  
+        }
 
-    /* Style for the video */
-    .overlay-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      z-index: 1; /* Ensure the video is on top */
-    }
+        .background-image {
+           width:340;
+            height: 510;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Set a lower z-index to place it behind the video */
+        }
+
+        .tiktok-video {
+            position: relative;
+            z-index: 1; /* Set a higher z-index to place it in front of the image */
+        
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 56.25%; /* Adjust this value to maintain aspect ratio */
+
+            
+        }
+        .tiktok-video iframe {
+            
+            border: 0;
+        }
 
 </style>
 
@@ -200,7 +212,7 @@ body {
     <div class="carousel-item active">
       <img src="images/Landing ID card.png" class="w-100 d-block h-100" alt="First slide" style="background-size: cover;">
       <div class="carousel-caption d-md-block">
-        <h5>An introduction of me through a collage!</h5>
+        <h5>Hi i'm Fayben & these are some of my music interests!</h5>
       </div>
     </div>
     <div class="carousel-item">
@@ -263,25 +275,46 @@ Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to crea
   </div>
 </div>
 
+<br/>
+<br/>
 
-<div class="tiktok-container">
-  <div class="tiktok-video">
+<div class="tiktok-container"> 
+
+   <div class="contains">
+ 
+    <img class="background-image" src="images/purpleGlitter.jpeg" alt="Background Image"> 
+    <div class="tiktok-video">
     <iframe src="https://www.tiktok.com/embed/7264693454729383214" width="320" height="490" frameborder="0" allowfullscreen></iframe>
 </div>
+</div>
 
-<div class="tiktok-video">  
+<div class="contains">
+ 
+  <img class="background-image" src="images/purpleGlitter.jpeg" alt="Background Image">
+  <div class="tiktok-video"> 
   <iframe src="https://www.tiktok.com/embed/7325296243079531818" width="320" height="490" frameborder="0" allowfullscreen></iframe>
    </div>
+</div>
 
-   <div class="tiktok-video">
+<div class="contains">
+   
+    <img class="background-image" src="images/purpleGlitter.jpeg" alt="Background Image">
+    <div class="tiktok-video">
     <iframe src="https://www.tiktok.com/embed/7289472063083957547" width="320" height="490" frameborder="0" allowfullscreen></iframe>
 </div>
+</div>
 
-<div class="tiktok-video">
+<div class="contains">
+
+  <img class="background-image" src="images/purpleGlitter.jpeg" alt="Background Image">
+  <div class="tiktok-video">
   <iframe src="https://www.tiktok.com/embed/7197957024334810411" width="320" height="490" frameborder="0" allowfullscreen></iframe>
 </div>
+</div>
 
 </div>
+
+
 
 </article>
   </main>
@@ -295,7 +328,7 @@ Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to crea
         <div class="footer-links">
         <div class="flex flex-wrap">
             <div class="footer-socials flex">
-                <div class="menu-social-container"><ul id="menu-social-1" class="footer-social-menu flex"><li class="instagram menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item"><a href="https://www.instagram.com/ohheyfayy" onclick="umgAAL.track.fanpage_link( umgAAL.standardized.SOCIAL_PLATFORMS.INSTAGRAM, 'https://www.instagram.com/ohheyfayy' );" title="Follow me on Instagram" target="_blank" data-umga-social-link="" data-umga-social-link-platform="Instagram" data-umga-social-link-location="Footer"><svg class="w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 47.41" aria-labelledby="instagramTitle instagramDesc" role="img">
+                <div class="menu-social-container"><ul id="menu-social-1" class="footer-social-menu flex"><li class="instagram menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item"><a href="https://www.instagram.com/ohheyfayy" onclick="umgAAL.track.fanpage_link( umgAAL.standardized.SOCIAL_PLATFORMS.INSTAGRAM, 'https://www.instagram.com/ohheyfayy' );"  target="_blank" data-umga-social-link="" data-umga-social-link-platform="Instagram" data-umga-social-link-location="Footer"><svg class="w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 47.41" aria-labelledby="instagramTitle instagramDesc" role="img">
                 <title id="instagramTitle">Instagram</title>
                 <desc id="instagramDesc">Instagram logo</desc>
                 <path d="M23.91.36c3.69,0,7.36-.17,11,0,7.67.43,12.63,5.31,12.89,13,.24,7,.24,14,0,21-.25,7.94-5.22,12.91-13.12,13.17-7.05.24-14.13.25-21.18,0C5.5,47.26.7,42.73.28,34.75a214.41,214.41,0,0,1,0-21.81C.69,5.3,5.41.9,13.12.41c3.6-.22,7.2,0,10.79,0Zm-.08,43v0c3.81,0,7.64.21,11.4-.06,4.75-.33,7.86-3,8.09-7.71.38-7.75.34-15.54,0-23.29a7.38,7.38,0,0,0-7.39-7.41c-7.9-.34-15.82-.36-23.72,0C7.66,5,4.85,8,4.64,12.53,4.3,20,4.23,27.5,4.57,35c.24,5.32,3.37,8,8.68,8.35C16.77,43.49,20.3,43.33,23.83,43.33ZM36.31,24.05A12.32,12.32,0,1,1,24.14,11.78,12.32,12.32,0,0,1,36.31,24.05Zm-4.29,0A7.93,7.93,0,0,0,24.2,16h0A8,8,0,1,0,32,24.09v0ZM36.78,8.42a2.64,2.64,0,0,0-2.7,2.79A2.59,2.59,0,0,0,36.75,14a2.8,2.8,0,1,0,.37-5.58h-.34Z" transform="translate(0 -0.3)"></path>
@@ -303,7 +336,7 @@ Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to crea
 
 
             <li class="tiktok menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item">
-              <a href="https://www.tiktok.com/@ohheyfayy" title="Follow me on TikTok" target="_blank" data-umga-social-link="" data-umga-social-link-platform="TikTok" data-umga-social-link-location="Footer">
+              <a href="https://www.tiktok.com/@ohheyfayy"  target="_blank" data-umga-social-link="" data-umga-social-link-platform="TikTok" data-umga-social-link-location="Footer">
                 
                 <svg class="w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-labelledby="tikTokTitle tikTokDesc" role="img">
                   <title id="tikTokTitle">TikTok</title>
@@ -319,7 +352,7 @@ Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to crea
 </ul></div>            </div>
                                   
 
- 
+<br/>
     
   </footer>
 
@@ -346,7 +379,7 @@ Hello everyone :) I’m Fayben, welcome to my blog! I’ve always wanted to crea
         particlesJS("snow", {
             "particles": {
                 "number": {
-                    "value": 200,
+                    "value": 50,
                     "density": {
                         "enable": true,
                         "value_area": 800
