@@ -16,12 +16,13 @@ html, body  {
  
   
 body{ 
-  background-size: cover;
   background-image: url(images/y2k\ journal_purple.png);
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
+  border: 2px solid #66407B;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
   
+  background-color: #66407B;
 }
   
   /* || typography */

@@ -12,10 +12,11 @@
   body {
  
 
-    background-image: url(images/Yellow\ Spring.png);
+    background-image: url(images/BratzFashion.png);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
+    border: 2px solid #B2A3CA;
 
     
   }
@@ -60,36 +61,33 @@ animation: animate 1s linear infinite;
 
   /* || typography */
   
-  h2{
-    font-family: 'Shrikhand';
-    font-weight: 600;
-  }
+  
 
-  p {
-    font-family: 'Domine';
-    font-weight: 200;
-    color: #001A1E;
-    text-align: justify;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    margin: 0 auto;
-  }
-
- 
   
   h2 {
     text-align: center;
-    color: #001A1E;
+    font-size: 2.6rem;
+    color: #fff;
+    font-family: 'Shrikhand';
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
+
   }
   
- h3 {
-color:bisque;
-text-align: center;
- }
+
+
+ p{
+  color:#000;
+}
 
  h6 {
-  color:blanchedalmond;
-  text-align: center;
+  font-family: 'Domine';
+  font-weight: 200;
+  color: #001A1E;
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0 auto;
  }
 
 
@@ -133,9 +131,9 @@ text-align: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 2px dotted #b79683f7;
+    border: 2px dotted #EACBD1;
     margin: 25px;
-    background-color:rgba(223, 192, 18, 0.892);
+    background-color:#9A6397; /*color yellow: rgba(223, 192, 18, 0.892) */
   }
 
 
@@ -145,7 +143,7 @@ text-align: center;
 
 /* || cursor trail */
 body {
-  overflow: hidden;
+  overflow: visible;
 }
 :root {
   --color: rgb(123, 7, 7);
@@ -183,6 +181,7 @@ body {
   top: calc(var(--size) / 2 * -1);
 }
 
+
 header {
   display: flex;
   align-items: center;
@@ -190,6 +189,7 @@ header {
   position: relative;
   z-index: 1001;
 }
+
 
 /* Nav bar style */
 nav {
@@ -224,7 +224,7 @@ nav a {
   transition: all 0.2s;
   color: #ffffff !important; /* Change the font color */ 
   font-family: serif;
-  text-shadow: -1px -1px 0 #ab3b86, 1px -1px 0 #ab3b86, -1px 1px 0 #ab3b86, 1px 1px 0 #ab3b86; /* Text outline with pink color */
+  text-shadow: -1px -1px 0 #ab54e9, 1px -1px 0 #ab54e9, -1px 1px 0 #ab54e9, 1px 1px 0 #ab54e9; /* Text outline with pink color */
 }
   .nav-link:hover {
     text-decoration: underline;
@@ -232,3 +232,48 @@ nav a {
    
     
 }
+
+
+/* Reset default margin and padding for the footer */
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the copyright text */
+footer p {
+  text-align: center;
+    font-size: 14px;
+    margin: 0; /* Remove default margin to ensure it's snug against the padding */
+}
+
+/* Style the social media icons container */
+#site-footer {
+  text-align: center;
+}
+
+/* Style the individual social media icons */
+.footer-social-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-menu li {
+  margin: 0 10px;
+}
+
+.footer-social-menu a {
+  display: inline-block;
+  color: inherit;
+}
+
+/* Ensure social media icons are the same size */
+.footer-social-menu svg {
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
+}
+
