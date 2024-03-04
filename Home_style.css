@@ -17,12 +17,12 @@ html, body  {
   
 body{ 
   background-image: url(images/y2k\ journal_purple.png);
-  border: 2px solid #66407B;
+  border: 2px solid #6D4173;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
   
-  background-color: #66407B;
+  background-color: #6D4173;
 }
   
   /* || typography */
@@ -241,12 +241,36 @@ nav a {
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 2px dotted #e93c93f7;
+  border: 2px dotted #c5327bf7;
   margin: 25px;
-  background-color: rgb(135, 117, 241);
+  background-color: rgb(105, 86, 216);
   font-family: sans-serif;
 }
 
+.image-container {
+  position: relative;
+}
+
+#carouselImage {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.image-container:hover #carouselImage {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+#imageLink {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 2;
+  opacity: 0; /* Invisible link initially */
+}
 
 
 
@@ -308,14 +332,19 @@ nav a {
 .tiktok-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start; /* Align to the left */
   gap: 10px; /* Adjust the gap between videos*/
+
 }
 
 .tiktok-video {
   flex: 1;
-  min-width: calc(70% - 5px); /* Adjust the width of each video container */
-  max-width: calc(70% - 5px); /* Adjust the width of each video container */
+  min-width: calc(80% - 10px); /* Adjust the width of each video container */
+  max-width: calc(80% - 10px); /* Adjust the width of each video container */
 }
+
+
+/* || Footer */
 
 
 /* Reset default margin and padding for the footer */
