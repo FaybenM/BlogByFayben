@@ -294,12 +294,26 @@ footer p {
 
 .scrolling-images {
   white-space: nowrap;
-  animation: scrolling 20s linear infinite; /* Adjust the duration as needed */
+  animation: scrolling 20s linear infinite;
+  width: 500%; /* Adjust the width to accommodate all images and create a seamless loop */
 }
 
 .scrolling-images img {
   display: inline-block;
   max-height: 100vh; /* Adjust the height as needed */
+  width: 20%; /* Adjust the width based on the number of images */
+}
+
+.scrolling-images2 {
+  white-space: nowrap;
+  animation: scrolling 20s linear infinite;
+  width: 600%; /* Adjust the width to accommodate all images and create a seamless loop */
+}
+
+.scrolling-images2 img {
+  display: inline-block;
+  max-height: 100vh; /* Adjust the height as needed */
+  width: 20%; /* Adjust the width based on the number of images */
 }
 
 @keyframes scrolling {
