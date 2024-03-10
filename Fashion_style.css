@@ -29,6 +29,7 @@ pointer-events: none;
 transition: .5s;
 background-size: cover;
 animation: animate 1s linear infinite;
+
 }
 
 @keyframes animate {
@@ -88,6 +89,7 @@ animation: animate 1s linear infinite;
   font-size: 1.3rem;
   line-height: 1.5;
   margin: 0 auto;
+  max-width: 100%; /* Adjust the value as needed */
  }
 
 
@@ -127,7 +129,7 @@ animation: animate 1s linear infinite;
     align-items: center;
     min-height: 85%;
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
@@ -147,7 +149,7 @@ body {
 }
 :root {
   --color: rgb(123, 7, 7);
-  --size: 0;
+  --size: 1px;
 }
 * {
   box-sizing: border-box;
@@ -155,6 +157,8 @@ body {
 .heart-container {
   position: absolute;
   opacity: 1;
+  z-index: 999; /* Set a higher z-index value */
+
 }
 .heart {
   width: var(--size);
@@ -164,6 +168,7 @@ body {
   position: relative;
   background: var(--color);
   margin: 10px auto;
+  
 }
 .heart:before,
 .heart:after {
@@ -173,6 +178,7 @@ body {
   height: var(--size);
   border-radius: 50%;
   background: var(--color);
+ 
 }
 .heart:before {
   left: calc(var(--size) / 2 * -1);
@@ -277,3 +283,30 @@ footer p {
   height: auto;
 }
 
+/*scrolling images*/
+
+
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.scrolling-images {
+  white-space: nowrap;
+  animation: scrolling 20s linear infinite; /* Adjust the duration as needed */
+}
+
+.scrolling-images img {
+  display: inline-block;
+  max-height: 100vh; /* Adjust the height as needed */
+}
+
+@keyframes scrolling {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
