@@ -192,12 +192,12 @@
            
  <!-- Scrolling images -->
  <div class="scrolling-container">
-  <div class="scrolling-images2">
+  <div class="scrolling-images">
       <img src="images/SummerOutfit1.jpeg" alt="Image 1" width="250" height="380">
       <img src="images/SummerOutfit2.jpeg" alt="Image 2" width="250" height="380">
       <img src="images/SummerOutfit3.jpeg" alt="Image 3" width="250" height="380">
       <img src="images/SummerOutfit4" alt="Image 4" width="250" height="380">
-      <img src="images/SummerOutfit5.jpeg" alt="Image 5" width="250" height="430">
+      <img src="images/SummerOutfit5.jpeg" alt="Image 5" width="250" height="380">
        </div>
 </div>
 
@@ -367,6 +367,40 @@
     </script>
 
 
+
+  <!-- Scrolling image loop code below -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var scrollingContainers = document.querySelectorAll('.scrolling-container');
+  
+      scrollingContainers.forEach(function (container) {
+        var scrollingImages = container.querySelector('.scrolling-images');
+        var images = scrollingImages.innerHTML;
+  
+        scrollingImages.innerHTML += images; // Duplicate the images
+  
+        // Calculate the width of a single scrolling item
+        var itemWidth = scrollingImages.clientWidth / document.querySelectorAll('.scrolling-images img').length;
+  
+        // Set the width of the container to accommodate all images in a row
+        scrollingImages.style.width = itemWidth * document.querySelectorAll('.scrolling-images img').length + 'px';
+  
+        // Attach animation end event listener
+        container.addEventListener('animationend', function () {
+          // Shift the container back to the start without resetting the animation
+          container.style.transition = 'none';
+          container.style.transform = 'translateX(0)';
+          void container.offsetWidth; // Trigger a reflow
+          container.style.transition = 'transform 20s linear infinite';
+          container.style.transform = 'translateX(-100%)';
+        });
+      });
+    });
+  </script>
+  
+  
+  
 
 
   </body>
