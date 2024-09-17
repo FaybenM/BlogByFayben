@@ -77,15 +77,8 @@ body > * {
     padding: 1%;
 }
 
-/* Following Mouse */
-.sunflower {
-    position: absolute;
-    pointer-events: none;
-    font-size: 1.5rem; /* Adjust size of the sunflower emoji */
-    transform: translate(-50%, -50%);
-    transition: transform 0.3s, opacity 0.3s;
-    opacity: 1;
-}
+/* Cursor trail */
+
 
 /* || main layout */
 
