@@ -1,302 +1,163 @@
 <!doctype html>
 <html lang="en">
-
-  <head>
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fayben's Blog</title>
-     <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="Fashion_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
-        
-<!-- Bootstrap JS bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-rBs5P2uQim8j3zHOw4RsITD8ItMKrKEF5xHhMf1OxvJyn8+glZt6p3GtLjNyo6Sw"
-   crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #B2A3CA !important;
+            cursor: none; /* Hide the default cursor */
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sunflower-emoji {
+            position: absolute;
+            pointer-events: none; /* Ensure it doesn't interfere with clicks */
+            font-size: 2rem; /* Adjust the size of the emoji */
+            z-index: 9999;
+            transform: translate(-50%, -50%); /* Center the emoji on the cursor */
+            transition: transform 0.1s ease; /* Smooth movement */
+        }
+        .scrolling-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .scrolling-images {
+            display: flex;
+            white-space: nowrap;
+            transition: transform 20s linear infinite;
+        }
+        .scrolling-images img {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
 
-
-   
-
-<style>
-
-  body {
-        background-color: #B2A3CA !important;
-        cursor: none; /* Hide the default cursor */
-      margin: 0;
-      height: 100vh;
-      overflow: hidden;
-  
-      }
-      .sunflower-emoji {
-      position: absolute;
-      pointer-events: none; /* Ensure it doesn't interfere with clicks */
-      font-size: 2rem; /* Adjust the size of the emoji */
-      z-index: 9999;
-      transform: translate(-50%, -50%); /* Center the emoji on the cursor */
-      transition: transform 0.1s ease; /* Smooth movement */
-</style>  
-
-
-  </head>
-  <body>
-
-    <div class="sunflower-emoji" id="sunflower-emoji">🌼</div>
-    <script>
-    document.addEventListener('mousemove', (event) => {
-      const sunflower = document.getElementById('sunflower-emoji');
-      sunflower.style.left = `${event.pageX}px`;
-      sunflower.style.top = `${event.pageY}px`;
-    });
-  </script>
-
-
- /* <script type="text/javascript">
-
- var images = ['🌼']
-
-  document.addEventListener("mousemove", function(e){
-    let body = document.querySelector('body');
-    let flower = document.createElement("span");
-    let x = e.offsetX;
-    let y = e.offsetY;
-
-
-    flower.style.left = x+ 'px';
-    flower.style.top = y+ 'px';
-
-    let size = Math.random() * 50;
-
-    let icon = images[Math.floor(Math.random() * images.length)]
-
-    
-    flower.innerText = icon;
-
-    
-
-    body.appendChild(flower);
-
-    setTimeout(function(){
-      flower.remove();
-    },1000)
-
-  })
-
- </script>
-*/
-
-<header>
-  <div class="logo">
-    <img src="images/FaybenBlogLogo.png" width="160" height="160" alt="Fayben's Blog logo">
-  </div>
-     
-      <!-- Nav Bar "navbar-light or -dark" / add custom-navbar after dark to give background color-->
-      <nav class="navbar navbar-expand-sm navbar-dark"> 
-  
-  
-  
-        <div class="container-fluid">
-          
-  
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            
-             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-          
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                      <!--<a class="nav-link active" href="Home.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a> -->
-                  </li>
-  
-                  <li class="nav-item">
-                      <a class="nav-link" href="Fashion.html">Fashion</a>
-                  </li>
-  
-                
-  
-                  <li class="nav-item">
-                      <a class="nav-link" href="HomeDecor.html">Interior Design</a>
-                  </li>
-  
-                  <li class="nav-item">
-                      <a class="nav-link" href="ContentReview.html">Content Reviews</a>
-                  </li>
-  
-  
-  
-              </ul>
-              
-              <!-- Search Button -->
-              <!-- <form class="d-flex my-2 my-lg-0">
-                  <input class="form-control me-sm-2" type="text" placeholder="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
-          </div>
-          </div>
-      </nav>
-  
-</header>
-    
-  
-    <main>
-      <article>
-      
-        <h2>Spring Fashion</h2>
-
-
-        
-        <div class="container">
-            
-            <div class="wrapper">
-            
-              <h6>There's lots of pieces that I’m obsessed with during the spring season, where it will usually carry on into the summer. I’ve been loving flowy tops with long flowy skirts. It sort of makes me feel like I should be in europe! I’ve been loving Sambas a lot, as another option to converse sneakers. Mini micro skirts are adorable, especially when they’re plaid and pleated. I love an oversized jacket no matter the weather! I’ve also adored the ribbon look in your hair to give a bit of coquette core <3. Ballet flats, with the straps on are my favorite new recent pieces I've gotten. It reminds me of when I was little I always wanted to wear flats but never gound a good pair back then but now I have!! It's basically healing my inner child lmao! I'm wearing them with jeans, a long denim skirt, and a long white skirt. </h6>
-           
-            </div>
-        </div>  
-       
- 
-
-        <h2>Fall Fashion</h2>
-
-        <div class="container">
-            
-          <div class="wrapper">
-          
-            <h6>Autumn is one of my favorite seasons for fashion since you get the best of both worlds of wearing layers and short sleaves. It's not too cold outside but not too hot so you can really wear anything and it works! because I get really excited about diving back into layered pieces when the season comes along. Having turlenecks underneath hoodies, leather jackets over tshirts, and shirts peaking out of sweaters (to give off a 90's vibe). One of my favorite things to wear is a leather jacket in the fall with any outfit. An honorable mention would be a sweater with a black mini skirt and knee high heeled boots. I love having a pop of cherry red in the fall, whether it's through my shoes, purse, or scarf.</h6>
-         
-          </div>
-      </div>  
-
-
-
-
-      <h2>Summer Fashion</h2>
-
-
-        
-      <div class="container">
-          
-          <div class="wrapper">
-          
-            <h6>During the hot season, you gotta wear tanks and possibly paired with sambas and long baggy denim shorts. Micro mini pleated skirts are being brought out and along with all of my cottage core dresses. Long patterned silk skirts are also a cool, it gives me 90s vibes. Baby tees are also my favorite thing to wear, both in the spring and the summer, and paired with anything like a mini skirt, shorts, and jeans.</h6>
-         
-          </div>
-      </div>  
-
-  
-
-
-
-      <h2>Winter Fashion</h2>
-        
-      <div class="container">
-          
-          <div class="wrapper">
-          
-            <h6>I feel like the winter time is generally when you get to showcase your best jacket and scarf combos. I love a good pea coat along with a plaid chunky scarf or a red scarf (to give a pop of color). I've seen many people rock those jackets with fur trims and I'm kinda obssesed with that too, it very much gives 70s vibes. Underneath the jackets you get to wear your favorite sweaters! For shoes obviously a doc marten is a must! It's also interchangable with knee high boots which are covered up by flared jeans, or you can go with the short square toed heeled boots. I've been seeing the knee high sock platform boots everyone, especially on sabrina carpenter, and that is also a must!</h6>
-         
-          </div>
-      </div>  
-
-           
- <!-- Scrolling images -->
- <div class="scrolling-container">
-  <div class="scrolling-images">
-    <img src="images/SpringOutfit1.png" alt="Image 1" width="250" height="380">
-        <img src="images/SpringOutfit2.png" alt="Image 2" width="250" height="380">
-        <img src="images/SpringOutfit3.jpeg" alt="Image 3" width="250" height="380">
-        <img src="images/SpringOutfit4.jpeg" alt="Image 4" width="250" height="380">
-        <img src="images/SpringOutfit5.jpeg" alt="Image 5" width="250" height="380">
-        <img src="images/FallOutfit1.jpeg" alt="Image 1" width="250" height="380">
-        <img src="images/FallOutfit2.jpeg" alt="Image 2" width="250" height="380">
-        <img src="images/FallOutfit3" alt="Image 3" width="250" height="380">
-        <img src="images/FallOutfit4.jpeg" alt="Image 4" width="250" height="380">
-        <img src="images/FallOutfit5.jpeg" alt="Image 5" width="250" height="380">
-        <img src="images/FallOutfit6.jpeg" alt="Image 6" width="250" height="380">
-        <img src="images/SummerOutfit1.jpeg" alt="Image 1" width="250" height="380">
-        <img src="images/SummerOutfit2.jpeg" alt="Image 2" width="250" height="380">
-        <img src="images/SummerOutfit3.jpeg" alt="Image 3" width="250" height="380">
-        <img src="images/SummerOutfit4" alt="Image 4" width="250" height="380">
-        <img src="images/SummerOutfit5.jpeg" alt="Image 5" width="250" height="380">
-      <img src="images/WinterOutfit1.jpeg" alt="Image 1" width="250" height="380">
-      <img src="images/WinterOutfit2.jpeg" alt="Image 2" width="250" height="380">
-      <img src="images/WinterOutfit3.jpeg" alt="Image 3" width="250" height="380">
-      <img src="images/WinterOutfit4.jpeg" alt="Image 4" width="250" height="380">
-      <img src="images/WinterOutfit5.jpeg" alt="Image 5" width="250" height="380">
-       </div>
-</div>
-
-        
-  <br/>
-  <br/>
-<br>
-      </article>
-    </main>
-    <footer>
-      <!-- place footer here -->
-
-
-      <p>&copy; 2023 Fayben's Blog. All rights reserved.</p>
-<!-- social media footer inspo by olivia rodrigo's website-->
-
-      <div id="site-footer">
-        <div class="footer-links">
-        <div class="flex flex-wrap">
-            <div class="footer-socials flex">
-                <div class="menu-social-container"><ul id="menu-social-1" class="footer-social-menu flex"><li class="instagram menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item"><a href="https://www.instagram.com/ohheyfayy" onclick="umgAAL.track.fanpage_link( umgAAL.standardized.SOCIAL_PLATFORMS.INSTAGRAM, 'https://www.instagram.com/ohheyfayy' );"  target="_blank" data-umga-social-link="" data-umga-social-link-platform="Instagram" data-umga-social-link-location="Footer"><svg class="w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 47.41" aria-labelledby="instagramTitle instagramDesc" role="img">
-                <title id="instagramTitle">Instagram</title>
-                <desc id="instagramDesc">Instagram logo</desc>
-                <path d="M23.91.36c3.69,0,7.36-.17,11,0,7.67.43,12.63,5.31,12.89,13,.24,7,.24,14,0,21-.25,7.94-5.22,12.91-13.12,13.17-7.05.24-14.13.25-21.18,0C5.5,47.26.7,42.73.28,34.75a214.41,214.41,0,0,1,0-21.81C.69,5.3,5.41.9,13.12.41c3.6-.22,7.2,0,10.79,0Zm-.08,43v0c3.81,0,7.64.21,11.4-.06,4.75-.33,7.86-3,8.09-7.71.38-7.75.34-15.54,0-23.29a7.38,7.38,0,0,0-7.39-7.41c-7.9-.34-15.82-.36-23.72,0C7.66,5,4.85,8,4.64,12.53,4.3,20,4.23,27.5,4.57,35c.24,5.32,3.37,8,8.68,8.35C16.77,43.49,20.3,43.33,23.83,43.33ZM36.31,24.05A12.32,12.32,0,1,1,24.14,11.78,12.32,12.32,0,0,1,36.31,24.05Zm-4.29,0A7.93,7.93,0,0,0,24.2,16h0A8,8,0,1,0,32,24.09v0ZM36.78,8.42a2.64,2.64,0,0,0-2.7,2.79A2.59,2.59,0,0,0,36.75,14a2.8,2.8,0,1,0,.37-5.58h-.34Z" transform="translate(0 -0.3)"></path>
-            </svg></a></li>
-
-
-            <li class="tiktok menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item">
-              <a href="https://www.tiktok.com/@ohheyfayy"  target="_blank" data-umga-social-link="" data-umga-social-link-platform="TikTok" data-umga-social-link-location="Footer">
-                
-                <svg class="w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-labelledby="tikTokTitle tikTokDesc" role="img">
-                  <title id="tikTokTitle">TikTok</title>
-                  <desc id="tikTokDesc">TikTok logo</desc>
-                  <path d="M24 48c-13.254 0-24-10.746-24-24s10.746-24 24-24 24 10.746 24 24-10.746 24-24 24zm0-44c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zM31 16c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zM17 16c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zM24 12c-3.312 0-6 2.688-6 6s2.688 6 6 6 6-2.688 6-6-2.688-6-6-6z"/>
-                </svg>
-              </a>
-            </li>
-          
-          
-
-
-</ul></div>            </div>
-                                  
-
-
-    </footer>
-  
-  
-  
-   <!-- Snow falling-->
-<div id="snow"></div>
-<style>
-	#snow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 1000;
-}
-</style>
+<div class="sunflower-emoji" id="sunflower-emoji">🌼</div>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function(){
-    var script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
-    script.onload = function(){
+    document.addEventListener('mousemove', (event) => {
+        const sunflower = document.getElementById('sunflower-emoji');
+        sunflower.style.left = `${event.pageX}px`;
+        sunflower.style.top = `${event.pageY}px`;
+    });
+</script>
+
+<header>
+    <div class="logo">
+        <img src="images/FaybenBlogLogo.png" width="160" height="160" alt="Fayben's Blog logo">
+    </div>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Fashion.html">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomeDecor.html">Interior Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContentReview.html">Content Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Spring Fashion</h2>
+        <div class="container">
+            <div class="wrapper">
+                <h6>There's lots of pieces that I’m obsessed with during the spring season, where it will usually carry on into the summer...</h6>
+            </div>
+        </div>
+
+        <h2>Fall Fashion</h2>
+        <div class="container">
+            <div class="wrapper">
+                <h6>Autumn is one of my favorite seasons for fashion since you get the best of both worlds...</h6>
+            </div>
+        </div>
+
+        <h2>Summer Fashion</h2>
+        <div class="container">
+            <div class="wrapper">
+                <h6>During the hot season, you gotta wear tanks and possibly paired with sambas and long baggy denim shorts...</h6>
+            </div>
+        </div>
+
+        <h2>Winter Fashion</h2>
+        <div class="container">
+            <div class="wrapper">
+                <h6>I feel like the winter time is generally when you get to showcase your best jacket and scarf combos...</h6>
+            </div>
+        </div>
+
+        <!-- Scrolling images -->
+        <div class="scrolling-container">
+            <div class="scrolling-images">
+                <img src="images/SpringOutfit1.png" alt="Image 1" width="250" height="380">
+                <!-- Add other images similarly -->
+                <img src="images/WinterOutfit5.jpeg" alt="Image 5" width="250" height="380">
+            </div>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2023 Fayben's Blog. All rights reserved.</p>
+    <div id="site-footer">
+        <div class="footer-links">
+            <div class="flex flex-wrap">
+                <div class="footer-socials flex">
+                    <ul id="menu-social-1" class="footer-social-menu flex">
+                        <li class="instagram menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item">
+                            <a href="https://www.instagram.com/ohheyfayy" target="_blank">
+                                <!-- Instagram SVG -->
+                            </a>
+                        </li>
+                        <li class="tiktok menu-item menu-item-type-custom menu-item-object-custom slide-menu-gr-item">
+                            <a href="https://www.tiktok.com/@ohheyfayy" target="_blank">
+                                <!-- TikTok SVG -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Snow falling -->
+<div id="snow"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
         particlesJS("snow", {
             "particles": {
                 "number": {
@@ -354,64 +215,30 @@
             },
             "retina_detect": true
         });
-    }
-    document.head.append(script);
-});
+    });
 </script>
 
-<!-- end of snow code-->
-  
-<script src="Fashion_script.js"></script> 
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
-
-
-
-  <!-- Scrolling image loop code below -->
-
-  <script>
+<!-- Scrolling image loop code -->
+<script>
     document.addEventListener('DOMContentLoaded', function () {
-      var scrollingContainers = document.querySelectorAll('.scrolling-container');
-  
-      scrollingContainers.forEach(function (container) {
-        var scrollingImages = container.querySelector('.scrolling-images');
-        var images = scrollingImages.innerHTML;
-  
-        scrollingImages.innerHTML += images; // Duplicate the images
-  
-        // Calculate the width of a single scrolling item
-        var itemWidth = scrollingImages.clientWidth / document.querySelectorAll('.scrolling-images img').length;
-  
-        // Set the width of the container to accommodate all images in a row
-        scrollingImages.style.width = itemWidth * document.querySelectorAll('.scrolling-images img').length + 'px';
-  
-        // Attach animation end event listener
-        container.addEventListener('animationend', function () {
-          // Shift the container back to the start without resetting the animation
-          container.style.transition = 'none';
-          container.style.transform = 'translateX(0)';
-          void container.offsetWidth; // Trigger a reflow
-          container.style.transition = 'transform 20s linear infinite';
-          container.style.transform = 'translateX(-100%)';
+        var scrollingContainers = document.querySelectorAll('.scrolling-container');
+
+        scrollingContainers.forEach(function (container) {
+            var scrollingImages = container.querySelector('.scrolling-images');
+            var images = scrollingImages.innerHTML;
+
+            scrollingImages.innerHTML += images; // Duplicate the images
+
+            container.addEventListener('mouseover', function () {
+                scrollingImages.style.animationPlayState = 'paused'; // Pause animation on hover
+            });
+
+            container.addEventListener('mouseleave', function () {
+                scrollingImages.style.animationPlayState = 'running'; // Resume animation on mouse leave
+            });
         });
-      });
     });
-  </script>
-  
-  
-  
+</script>
 
-
-  </body>
-  
-  </html>
-
-
-
+</body>
+</html>
