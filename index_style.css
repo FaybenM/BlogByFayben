@@ -195,6 +195,38 @@ nav a {
   }
   
 /* Existing styles for carousel */
+
+.carousel-item {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+#imageLink {
+  display: block;
+  position: relative;
+  text-decoration: none; /* Remove underline from link */
+}
+
+#carouselImage {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.carousel-caption {
+  bottom: 0;
+  left: 0;
+  padding: 1rem; /* Adjust padding as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 0.5rem; /* Rounded corners if needed */
+}
+
+.carousel-caption h5 {
+  margin: 0;
+}
+
 #carouselId {
   height: 100vh;
   margin: 0;
