@@ -1,103 +1,139 @@
 /* || General setup */
 
-* {
+* {                     
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-}
 
-body {
+
+  }
+    
+  
+  
+  body {
+ 
+
     background-image: url(images/BratzFashion.png);
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover; /* Adjusted to cover the entire screen */
+    background-size: 100% 100%;
     border: 2px solid #B2A3CA;
-    font-family: Arial, sans-serif; /* Added a fallback font */
-}
 
-/* added this */
+    
+  }
+
+/* added this*/
 span {
-    position: absolute;
-    pointer-events: none;
-    transition: 0.5s;
-    background-size: cover;
-    animation: animate 1s linear infinite;
+position: absolute;
+pointer-events: none;
+
+transition: .5s;
+background-size: cover;
+animation: animate 1s linear infinite;
+
 }
 
 @keyframes animate {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    30% {
-        transform: translateY(100px);
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(80px);
-        opacity: 0;
-    }
+  0%
+  {
+    translate: 0 0;
+    opacity: 0;
+  }
+  10%
+  {
+    opacity: 1;
+  }
+  30%
+  {
+    translate: 0 100px;
+    opacity: 1;
+  }
+  90%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    translate: 0 80px;
+    opacity: 0;
+  }
 }
+  
 
-/* || typography */
 
-h2 {
+  /* || typography */
+  
+  
+
+  
+  h2 {
     text-align: center;
     font-size: 2.6rem;
     color: #fff;
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Shrikhand';
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
+
+  }
+  
+
+
+ p{
+  color:#000;
 }
 
-p {
-    color: #000;
-}
+ h6 {
+  font-family: 'Domine';
+  font-weight: 200;
+  color: #001A1E;
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 100%; /* Adjust the value as needed */
+ }
 
-h6 {
-    font-family: 'Domine', serif;
-    font-weight: 200;
-    color: #001A1E;
-    text-align: justify;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 100%; /* Adjust the value as needed */
-}
 
-/* || header layout */
+  
+  /* || header layout */
+  
 
-body > * {
+ 
+  body > * {
     padding: 1%;
+  }
+  
+
+  /*Following Mouse*/
+.butterfly {
+  position: absolute;
+  pointer-events: none;
+  font-size: 1.5rem; /* Adjust size of the sunflower emoji */
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 1;
 }
 
-/* Cursor trail */
-
-
-/* || main layout */
-
-main {
+  
+  /* || main layout */
+  
+  main {
     display: flex;
     flex: 1;
     justify-content: space-between;
-}
+  }
+  
+  article{
+    flex: 4; 
+  }
+  
 
-article {
-    flex: 4;
-}
-
-li {
-    font-family: 'Shrikhand', cursive;
+  li {
+    font-family: 'Shrikhand';
     font-size: large;
-}
+  }
 
-.wrapper {
+
+  .wrapper {
     align-items: center;
     min-height: 85%;
     display: flex;
@@ -107,25 +143,32 @@ li {
     flex-direction: column;
     border: 2px dotted #EACBD1;
     margin: 25px;
-    background-color: #9A6397; /* Adjusted color */
-    border-radius: 14px; /* Added border radius for rounded corners */
-}
+    background-color:#9A6397; /*color yellow: rgba(223, 192, 18, 0.892) */
+  }
+
+
+  .wrapper div {
+    border-radius: 14px;
+  }
+
 
 header {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    z-index: 1001;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 1001;
 }
+
 
 /* Nav bar style */
 nav {
-    z-index: 2; /* Higher z-index */
-    margin: 0 auto; /* Center horizontally */
-    margin-left: 17em; /* Adjust left margin */
-    display: flex;
-    align-items: center;
+  z-index: 2; /* Higher z-index */
+  margin: 0 auto; /* Center horizontally */
+  margin-right: auto;
+  margin-left: 17em; /* Adjust left margin */
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -133,95 +176,105 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+   
 }
 
 nav li {
     margin-right: 15px; /* Adjust the margin between menu items */
+    
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
+    
 }
 
 .nav-link {
-    transition: all 0.2s;
-    color: #ffffff !important; /* Change the font color */ 
-    font-family: serif;
-    text-shadow: -1px -1px 0 #ab54e9, 1px -1px 0 #ab54e9, -1px 1px 0 #ab54e9, 1px 1px 0 #ab54e9; /* Text outline with pink color */
+  transition: all 0.2s;
+  color: #ffffff !important; /* Change the font color */ 
+  font-family: serif;
+  text-shadow: -1px -1px 0 #ab54e9, 1px -1px 0 #ab54e9, -1px 1px 0 #ab54e9, 1px 1px 0 #ab54e9; /* Text outline with pink color */
 }
-
-.nav-link:hover {
+  .nav-link:hover {
     text-decoration: underline;
     -webkit-tap-highlight-color: transparent !important;
+   
+    
 }
+
 
 /* Reset default margin and padding for the footer */
 footer {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Style the copyright text */
 footer p {
-    text-align: center;
+  text-align: center;
     font-size: 14px;
     margin: 0; /* Remove default margin to ensure it's snug against the padding */
 }
 
 /* Style the social media icons container */
 #site-footer {
-    text-align: center;
+  text-align: center;
 }
 
 /* Style the individual social media icons */
 .footer-social-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-social-menu li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .footer-social-menu a {
-    display: inline-block;
-    color: inherit;
+  display: inline-block;
+  color: inherit;
 }
 
 /* Ensure social media icons are the same size */
 .footer-social-menu svg {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
 }
 
-/* Scrolling images */
+/*scrolling images*/
+
 
 .scrolling-container {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+
 }
 
 .scrolling-images {
-    white-space: nowrap;
-    animation: scrolling 20s linear infinite;
+  white-space: nowrap;
+  animation: scrolling 20s linear infinite;
+  
 }
 
 .scrolling-images img {
-    display: inline-block;
-    max-height: 100vh; /* Adjust the height as needed */
-    width: 20%; /* Adjust the width based on the number of images */
+  display: inline-block;
+  max-height: 100vh; /* Adjust the height as needed */
+  width: 20%; /* Adjust the width based on the number of images */
 }
 
+
+
 @keyframes scrolling {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
