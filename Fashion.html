@@ -31,26 +31,25 @@
         background-color: #B2A3CA !important;
       
       margin: 0;
-      height: 100vh;
       overflow: hidden;
   
       }
-      .butterfly-emoji {
+      .cursor-trail {
       position: absolute;
       pointer-events: none; /* Ensure it doesn't interfere with clicks */
-      font-size: 2rem; /* Adjust the size of the emoji */
-      z-index: 9999;
+      font-size: 24px; /* Adjust the size of the emoji */
       transform: translate(-50%, -50%); /* Center the emoji on the cursor */
-      transition: transform 0.1s ease; /* Smooth movement */}
+      transition: transform 0.1s; /* Smooth movement */
+      }
 </style>  
 
 
   </head>
   <body>
 
-    <div class="butterfly-emoji" id="butterfly-emoji">🦋</div>
+    <div id="cursor-trail" class="butterfly">🦋</div>
 
-
+    <script src="Fashion_script.js"></script> 
 
  
 
@@ -323,7 +322,7 @@
 
 <!-- end of snow code-->
   
-<script src="Fashion_script.js"></script> 
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
