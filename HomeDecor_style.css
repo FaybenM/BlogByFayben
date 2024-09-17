@@ -17,7 +17,14 @@
     background-size: 100% 100%;
   }
 
-
+  a {
+    color: #fff; /* Or your preferred color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Or other hover effects */
+  }
   
   /* || typography  
   
