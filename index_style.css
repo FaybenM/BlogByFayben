@@ -220,21 +220,12 @@ nav a {
 
 .carousel-caption {
   top: 77%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px; /* Add rounded corners */
-
-  position: absolute;
-  bottom: 0;
   left: 50%;
-  transform: translateX(50%);
+  transform: translateX(-50%);
   text-align: center;
-  
-  padding: 20px; /* Adjust padding as needed */
-
+  padding: 20px;
   font-size: 1.5rem;
   margin-bottom: 40px;
-
-  
   height: 15%;
   display: flex;
   width: 30%;
@@ -246,6 +237,7 @@ nav a {
   background-color: rgb(105, 86, 216);
   font-family: sans-serif;
 }
+
 
 .image-container {
   position: relative;
