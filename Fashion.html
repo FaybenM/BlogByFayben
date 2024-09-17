@@ -29,17 +29,36 @@
 
   body {
         background-color: #B2A3CA !important;
+        cursor: none; /* Hide the default cursor */
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
   
       }
+      .sunflower-emoji {
+      position: absolute;
+      pointer-events: none; /* Ensure it doesn't interfere with clicks */
+      font-size: 2rem; /* Adjust the size of the emoji */
+      z-index: 9999;
+      transform: translate(-50%, -50%); /* Center the emoji on the cursor */
+      transition: transform 0.1s ease; /* Smooth movement */
 </style>  
 
 
   </head>
   <body>
 
-    
+    <div class="sunflower-emoji" id="sunflower-emoji">🌼</div>
+    <script>
+    document.addEventListener('mousemove', (event) => {
+      const sunflower = document.getElementById('sunflower-emoji');
+      sunflower.style.left = `${event.pageX}px`;
+      sunflower.style.top = `${event.pageY}px`;
+    });
+  </script>
 
- <!-- <script type="text/javascript">
+
+ /* <script type="text/javascript">
 
  var images = ['🌼']
 
@@ -71,7 +90,7 @@
   })
 
  </script>
--->
+*/
 
 <header>
   <div class="logo">
