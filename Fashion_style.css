@@ -126,13 +126,7 @@ animation: animate 1s linear infinite;
   background-size: contain;
 }
 
-.butterfly {
-  opacity: 1; /* Start fully visible */
-}
 
-.butterfly:hover {
-  opacity: 0; /* Fade out on hover */
-}
 
 /* Animation for butterfly */
 @keyframes animate {
