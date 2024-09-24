@@ -1,19 +1,25 @@
-const cursorTrail = document.getElementById('cursor-trail');
+const cursorTrail = document.getElementById("cursor-trail");
 
-document.addEventListener('mousemove', (event) => {
-  // Set the position of the cursor trail to the mouse position
-  cursorTrail.style.left = `${event.pageX}px`;
-  cursorTrail.style.top = `${event.pageY}px`;
+// Function to create multiple butterflies
+function createButterfly(x, y) {
+    const butterfly = document.createElement("div");
+    butterfly.className = "butterfly";
+    butterfly.style.left = `${x}px`;
+    butterfly.style.top = `${y}px`;
+    butterfly.innerHTML = "🦋"; // This can be replaced with an image if needed
 
-  // Create a new butterfly element for each mouse movement
-  const butterfly = document.createElement('div');
-  butterfly.className = 'butterfly';
-  butterfly.style.left = `${event.pageX}px`;
-  butterfly.style.top = `${event.pageY}px`;
-  document.body.appendChild(butterfly);
+    document.body.appendChild(butterfly);
 
-  // Remove the butterfly after a short duration (e.g., 500ms)
-  setTimeout(() => {
-    butterfly.remove();
-  }, 500); // Adjust timing as necessary
+    // Animation logic
+    butterfly.style.animation = "animate 1s linear forwards";
+
+    // Remove the butterfly after animation ends
+    butterfly.addEventListener("animationend", () => {
+        butterfly.remove();
+    });
+}
+
+// Update the position on mouse movement
+document.addEventListener("mousemove", (event) => {
+    createButterfly(event.clientX, event.clientY);
 });

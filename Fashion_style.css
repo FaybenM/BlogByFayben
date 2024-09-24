@@ -105,17 +105,16 @@ animation: animate 1s linear infinite;
 
   /*Mouse cursor trail*/ 
 
-  /*position: absolute;
-  pointer-events: none;
-  font-size: 1.5rem; /
-  transform: translate(-50%, -50%);
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 1;
-.butterfly {
-  position: static;
-  z-index: 1;
+ /* Butterfly cursor trail */
+#cursor-trail {
+  position: absolute;
+  pointer-events: none; /* Ensures it doesn't interfere with other elements */
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  background-size: contain;
+  opacity: 1; /* Start fully visible */
+  z-index: 9999; /* Ensure it's above all other content */
 }
-*/
 
 
 .butterfly {
@@ -123,15 +122,31 @@ animation: animate 1s linear infinite;
   pointer-events: none;
   font-size: 24px; /* Adjust size as needed */
   transition: opacity 1s ease-out; /* Smooth fade-out */
-  z-index: 9999; /* Ensure it appears on top */
+  z-index: 10000; /* Ensure it's above the trail */
+  background-size: contain;
 }
 
-.butterfly {
-  opacity: 1; /* Start fully visible */
-}
 
-.butterfly:hover {
-  opacity: 0; /* Fade out on hover */
+/* Animation for butterfly */
+@keyframes animate {
+  0% {
+      transform: translate(0, 0);
+      opacity: 0;
+  }
+  10% {
+      opacity: 1;
+  }
+  30% {
+      transform: translate(0, 100px);
+      opacity: 1;
+  }
+  90% {
+      opacity: 1;
+  }
+  100% {
+      transform: translate(0, 80px);
+      opacity: 0;
+  }
 }
 
   
