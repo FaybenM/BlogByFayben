@@ -117,14 +117,13 @@ animation: animate 1s linear infinite;
 }
 
 
+
 .butterfly {
   position: absolute;
   pointer-events: none;
-  font-size: 24px; /* Adjust size as needed */
-  transition: opacity 1s ease-out; /* Smooth fade-out */
-  z-index: 10000; /* Ensure it's above the trail */
-  background-size: contain;
-  transform-origin: center;
+  font-size: 20px; /* Adjust size of the butterfly emoji */
+  opacity: 0; /* Start invisible */
+  animation: flutter 1s forwards; /* Add flutter animation */
 }
 
 
@@ -152,29 +151,22 @@ animation: animate 1s linear infinite;
 }
 */
 
-@keyframes animate {
-  0%
-  {
-    translate: 0 0;
-    opacity: 0;
+
+@keyframes flutter {
+  0% {
+      transform: translateY(0);
+      opacity: 0;
   }
-  10%
-  {
-    opacity: 1;
+  10% {
+      opacity: 1;
   }
-  30%
-  {
-    translate: 0 100px;
-    opacity: 1;
+  30% {
+      transform: translateY(-30px); /* Fly up slightly */
+      opacity: 1;
   }
-  90%
-  {
-    opacity: 1;
-  }
-  100%
-  {
-    translate: 0 80px;
-    opacity: 0;
+  100% {
+      transform: translateY(100px); /* Move down */
+      opacity: 0; /* Fade out */
   }
 }
   

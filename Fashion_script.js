@@ -3,7 +3,7 @@ const cursorTrail = document.getElementById("cursor-trail");
 // Function to create multiple butterflies
 function createButterfly(x, y) {
     const butterfly = document.createElement("div");
-    butterfly.className = "butterfly";
+    butterfly.className = "butterfly"; // Use the class we defined in CSS
     butterfly.style.left = `${x}px`;
     butterfly.style.top = `${y}px`;
     butterfly.innerHTML = "🦋"; // This can be replaced with an image if needed
@@ -11,7 +11,7 @@ function createButterfly(x, y) {
     document.body.appendChild(butterfly);
 
     // Animation logic
-    butterfly.style.animation = "animate 1s linear forwards";
+    butterfly.style.animation = "flutter 1s forwards"; // Use the flutter animation
 
     // Remove the butterfly after animation ends
     butterfly.addEventListener("animationend", () => {
