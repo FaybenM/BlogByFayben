@@ -15,16 +15,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
+  border: 2px solid #5d5f93;
 }
 
 
 
-/* || typography
+/* || typography */
 
-html {
-  font-size: 10px;
-}
-*/
+
 
 h1,h2,li {
   font-family: 'Shrikhand';
@@ -35,7 +33,7 @@ p {
   font-family: 'Domine';
   font-size: 200px;
   font-weight: 200;
-  color: #001A1E;
+  color:#000;
   text-align: justify;
 }
 
@@ -63,8 +61,11 @@ li {
 /* || header layout */
 
 header {
-  margin-bottom: 10px;
-  flex-flow: row wrap;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 1001;
 }
 
 
@@ -128,3 +129,88 @@ p,li {
   border-radius: 14px;
 }
 
+/* Nav bar style */
+nav {
+  z-index: 2; /* Higher z-index */
+  margin: 0 auto; /* Center horizontally */
+  margin-right: auto;
+  margin-left: 17em; /* Adjust left margin */
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+}
+
+nav li {
+    margin-right: 15px; /* Adjust the margin between menu items */
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.nav-link {
+  transition: all 0.2s;
+  color: #ffffff !important; /* Change the font color */ 
+  font-family: serif;
+  text-shadow: -1px -1px 0 #ab54e9, 1px -1px 0 #ab54e9, -1px 1px 0 #ab54e9, 1px 1px 0 #ab54e9; /* Text outline with pink color */
+}
+  .nav-link:hover {
+    text-decoration: underline;
+    -webkit-tap-highlight-color: transparent !important;
+   
+    
+}
+
+
+/* Reset default margin and padding for the footer */
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the copyright text */
+footer p {
+  text-align: center;
+    font-size: 14px;
+    margin: 0; /* Remove default margin to ensure it's snug against the padding */
+}
+
+/* Style the social media icons container */
+#site-footer {
+  text-align: center;
+}
+
+/* Style the individual social media icons */
+.footer-social-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-menu li {
+  margin: 0 10px;
+}
+
+.footer-social-menu a {
+  display: inline-block;
+  color: inherit;
+}
+
+/* Ensure social media icons are the same size */
+.footer-social-menu svg {
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
+}
