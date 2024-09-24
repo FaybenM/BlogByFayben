@@ -21,5 +21,10 @@ function createButterfly(x, y) {
 
 // Update the position on mouse movement
 document.addEventListener("mousemove", (event) => {
+    // Create a butterfly at the current mouse position
     createButterfly(event.clientX, event.clientY);
+
+    // Update cursorTrail position
+    cursorTrail.style.left = `${event.pageX}px`; // Use pageX for scrolling
+    cursorTrail.style.top = `${event.pageY}px`;  // Use pageY for scrolling
 });
