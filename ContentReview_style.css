@@ -10,12 +10,17 @@
 
 body {
 
-
-  background-image: url(images/goodnight\ moon_treats.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-  border: 2px solid #5d5f93;
+  background-image: url(images/contentReviewBG.jpeg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(240, 227, 210);
+  
+  line-height: 1;
 }
 
 
