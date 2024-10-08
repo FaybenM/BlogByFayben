@@ -1,0 +1,217 @@
+/* || General setup */
+
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  
+  
+  body {
+  
+  
+    background-image: url(images/goodnight\ moon_treats.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    border: 2px solid #5d5f93;
+  }
+  
+  
+  
+  /* || typography */
+  
+  
+  
+  h1,h2,li {
+    font-family: 'Shrikhand';
+    font-weight: 600;
+  }
+  
+  p {
+    font-family: 'Domine';
+    font-size: 200px;
+    font-weight: 200;
+    color:#000;
+    text-align: justify;
+  }
+  
+  
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    color:#b79683f7;
+  }
+  
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #001A1E;
+  }
+  
+  
+  li {
+    line-height: 1.5;
+    text-align: center;
+    
+  }
+  
+  /* || header layout */
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  
+  
+  body > * {
+    padding: 1%;
+  }
+  
+  
+  
+  h1 {
+    flex: 5;
+    text-transform: uppercase;
+  }
+  
+  header img {
+    border-radius: 8px;
+    width: 270px;
+    height: 125px;
+  }
+  
+  
+  /* || main layout */
+  
+  main {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  article{
+    flex: 4; 
+  }
+  
+  
+  p,li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    
+  }
+  .wrapper {
+    align-items: center;
+    min-height: 85%;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px dotted rgb(253, 228, 228);
+    margin: 25px;
+    background-color: #b79683f7;
+  }
+  
+  .landing{
+    max-width: 70%;
+    max-height:70%;
+  }
+  
+  .wrapper div {
+    border-radius: 14px;
+  }
+  
+  /* Nav bar style */
+  nav {
+    z-index: 2; /* Higher z-index */
+    margin: 0 auto; /* Center horizontally */
+    margin-right: auto;
+    margin-left: 17em; /* Adjust left margin */
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+     
+  }
+  
+  nav li {
+      margin-right: 15px; /* Adjust the margin between menu items */
+      
+  }
+  
+  nav a {
+      text-decoration: none;
+      color: #fff;
+      
+  }
+  
+  .nav-link {
+    transition: all 0.2s;
+    color: #ffffff !important; /* Change the font color */ 
+    font-family: serif;
+    text-shadow: -1px -1px 0 #ab54e9, 1px -1px 0 #ab54e9, -1px 1px 0 #ab54e9, 1px 1px 0 #ab54e9; /* Text outline with pink color */
+  }
+    .nav-link:hover {
+      text-decoration: underline;
+      -webkit-tap-highlight-color: transparent !important;
+     
+      
+  }
+  
+  
+  /* Reset default margin and padding for the footer */
+  footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the copyright text */
+  footer p {
+    text-align: center;
+      font-size: 14px;
+      margin: 0; /* Remove default margin to ensure it's snug against the padding */
+  }
+  
+  /* Style the social media icons container */
+  #site-footer {
+    text-align: center;
+  }
+  
+  /* Style the individual social media icons */
+  .footer-social-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-social-menu li {
+    margin: 0 10px;
+  }
+  
+  .footer-social-menu a {
+    display: inline-block;
+    color: inherit;
+  }
+  
+  /* Ensure social media icons are the same size */
+  .footer-social-menu svg {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
