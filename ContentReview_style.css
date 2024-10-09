@@ -11,7 +11,7 @@
 
 body {
 
-  background-image: url(images/contentReviewBG.jpeg);
+  background-image: url(images/contentReviewBG.jpeg) !important;
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
