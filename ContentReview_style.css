@@ -79,7 +79,9 @@ body > * {
   padding: 1%;
 }
 
-
+.logo {
+  text-align: left;
+}
 
 
 h1 {
