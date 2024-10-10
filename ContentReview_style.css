@@ -103,6 +103,11 @@ main {
   padding-bottom: 25px;
   border-bottom: 3px solid var(--brown);
 
+  margin-top: 18px;
+  gap: 24px;
+  border-left: 3px solid var(--brown);
+  border-right: 3px solid var(--brown);
+
 }
 
 article{
