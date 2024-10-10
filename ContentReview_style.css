@@ -110,6 +110,39 @@ main {
 
 }
 
+.column-left, .column-left, .content {
+  padding: 0 15px 76px;
+  position: sticky;
+  top: 20px;
+      }
+  .column-left{
+    width: 20%;
+      border-right: 3px solid var(--brown);
+
+  }
+
+      .content{
+          max-width: 90%;
+          margin: 0 auto;
+      }
+
+     
+  .middle-column {
+      width: 60%;
+      border-left: 3px solid var(--brown);
+      border-right: 3px solid var(--brown);
+
+      
+  }
+  
+  .column-right {
+      width: 20%;
+      border-left: 3px solid var(--brown);
+      
+  }
+
+
+
 article{
   flex: 4; 
 }
