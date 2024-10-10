@@ -99,6 +99,10 @@ main {
   display: flex;
   flex: 1;
   justify-content: space-between;
+
+  padding-bottom: 25px;
+  border-bottom: 3px solid var(--brown);
+
 }
 
 article{
