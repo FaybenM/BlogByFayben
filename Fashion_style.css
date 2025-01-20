@@ -120,7 +120,7 @@ animation: animate 1s linear infinite;
   background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
   border-radius: 50%; /* Make it circular */
   z-index: 9999; /* Ensure it's above all other content */
-  transition: left 0.1s ease, top 0.1s ease; /* Smooth movement */
+  transition: transform 0.1s ease; /* Smooth movement */
 }
 
 
@@ -137,9 +137,21 @@ animation: animate 1s linear infinite;
 
 
 @keyframes flutter {
-  0% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(20deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+  10% {
+      opacity: 1;
+  }
+  30% {
+      transform: translateY(-30px); /* Fly up slightly */
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(100px); /* Move down */
+      opacity: 0; /* Fade out */
+  }
 }
   
   /* || main layout */
@@ -172,9 +184,7 @@ animation: animate 1s linear infinite;
     border: 2px dotted #EACBD1;
     margin: 25px;
     background-color:#9A6397; /*color yellow: rgba(223, 192, 18, 0.892) */
-    padding: 20px; /* Added */
-    max-width: 600px; /* Added */
-    text-align: center; /* Added */
+    
   }
 
 
