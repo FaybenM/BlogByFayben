@@ -175,7 +175,7 @@ animation: animate 1s linear infinite;
 
   .wrapper {
     align-items: center;
-    min-height: 85%;
+    min-height: 25%;
     display: flex;
     width: 90%;
     justify-content: flex-start;
