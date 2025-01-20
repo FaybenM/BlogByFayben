@@ -184,9 +184,6 @@ animation: animate 1s linear infinite;
     border: 2px dotted #EACBD1;
     margin: 25px;
     background-color:#9A6397; /*color yellow: rgba(223, 192, 18, 0.892) */
-    padding: 10px; /* Added */
-    max-width: 600px; /* Added */
-    text-align: center; /* Added */
   }
 
 
