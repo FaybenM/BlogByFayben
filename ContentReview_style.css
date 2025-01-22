@@ -15,7 +15,8 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Domine', sans-serif;
-  background: #f0e3d2 url(images/contentReviewBG.jpeg) center center/cover repeat-y;
+  background: url(images/contentReviewBG.jpeg) center center/cover repeat-y;
+  background-color: #f0e3d2;
   text-align: justify;
   /* background-color: #f0e3d2
   background-position-x: center;
