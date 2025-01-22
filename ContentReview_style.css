@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Domine', sans-serif;
-  background: url(images/contentReviewBG.jpeg) center center/cover repeat-y;
+  background: #f0e3d2 url(images/contentReviewBG.jpeg) center center/cover repeat-y;
   text-align: justify;
   /* background-color: #f0e3d2
   background-position-x: center;
@@ -179,7 +179,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333; /* Set a background color for visibility */
   padding: 10px 20px;
   z-index: 2;
 }
@@ -228,17 +227,15 @@ nav a {
 
 
 /* Reset default margin and padding for the footer */
-footer {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
-  width: 100%;
-  padding-bottom: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1rem;
+  margin-top: auto; /* Push footer to the bottom */
+  text-align: center;
 }
 
 
