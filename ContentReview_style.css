@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  height: 100%;
   box-sizing: border-box;
   
 }
@@ -228,6 +227,14 @@ nav a {
     -webkit-tap-highlight-color: transparent !important;
    
     
+}
+
+.movie-poster {
+  width: 100%;        /* Scales image to fit its parent container */
+  max-width: 363px;   /* Prevents the image from exceeding 363px */
+  height: auto;       /* Maintains aspect ratio */
+  display: block;     /* Eliminates extra space around inline elements */
+  object-fit: cover;  /* Optional: crops the image to fit its container */
 }
 
 /* Blog Grid Styles */
