@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  box-sizing: border-box;
   
 }
 
@@ -18,6 +19,7 @@ body {
   background: url(images/contentReviewBG.jpeg) center center/cover repeat-y;
   background-color: #f0e3d2;
   text-align: justify;
+  line-height: 1.6;
   /* background-color: #f0e3d2
   background-position-x: center;
   background-position-y: center;
@@ -28,7 +30,7 @@ body {
   background-clip: initial;
   background-color: rgb(240, 227, 210);
 
-   line-height: 1;*/
+   */
 }
 
 
@@ -37,7 +39,7 @@ body {
 
 
 
-h1,h2,li {
+/* || h2 */ h1,li {
   font-family: 'Shrikhand';
   font-weight: 600;
 }
@@ -58,11 +60,11 @@ h1 {
 }
 
 
-h2 {
+/* || h2 {
   font-size: 3rem;
   text-align: center;
   color: #001A1E;
-}
+}*/
 
 
 li {
@@ -75,10 +77,12 @@ li {
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   position: relative;
   z-index: 1001;
+  border-bottom: 1px solid #eaeaea;
 }
 
 
@@ -225,6 +229,58 @@ nav a {
    
     
 }
+
+/* Blog Grid Styles */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Blog Card Styles */
+.blog-card {
+  background-color: #f0e3d2;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content .review {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.card-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+
 
 
 /* Reset default margin and padding for the footer */
