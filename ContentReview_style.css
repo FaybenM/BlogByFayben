@@ -273,11 +273,13 @@ nav a {
 .card-content h2 {
   font-size: 1.25rem;
   margin-bottom: 15px;
+  color: #001A1E;
 }
 
-.card-content p {
+.card-content .opinion {
   margin-bottom: 20px;
   font-size: 1rem;
+  color: #080808;
 }
 
 
