@@ -165,6 +165,9 @@ nav a {
     align-items: flex-start; /* Align items at the top */
     gap: 20px; /* Add space between elements */
     margin-bottom: 30px; /* Space between sections */
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* For vertical centering */
   }
   
   /* Ensure images do not overflow */
@@ -178,6 +181,11 @@ nav a {
   /* Content styling */
   .wrapper .content {
     max-width: 600px; /* Limit text width for readability */
+  }
+
+  .content{
+    max-width: 600px;
+    text-align: center;
   }
 
   .modern{
