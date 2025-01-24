@@ -24,8 +24,7 @@ html, body  {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
-    border: 2px solid #efe1d8;
-    background-color: #efe1d8;
+    background-color: #efe1d8 !important;
   }
 
   
@@ -42,23 +41,22 @@ html, body  {
     /*'monospace'*/
     font-size: 300px;
     font-weight: 250;
-    color: #EDEDED;
+    color: white;
+  text-shadow: 
+    -0.5px -0.5px 0 black,
+     0.5px -0.5px 0 black,
+    -0.5px  0.5px 0 black,
+     0.5px  0.5px 0 black;
     text-align: justify;
   }
 
   
-  h1 {
-    font-size: 5rem;
-    text-align: center;
-    color:#b79683f7;
-  }
-  
+
   
   h2 {
     font-size: 3rem;
     text-align: center;
-    color: #001A1E;
-    background-color: darkseagreen;
+    color: rgb(161, 206, 161);
   }
   
  
@@ -131,7 +129,7 @@ nav a {
   transition: all 0.2s;
   color: #ffffff !important; /* Change the font color */ 
   font-family: serif;
-  text-shadow: -1px -1px 0 #ab3b86, 1px -1px 0 #ab3b86, -1px 1px 0 #ab3b86, 1px 1px 0 #ab3b86; /* Text outline with pink color */
+  text-shadow: -1px -1px 0 #ca6a3a, 1px -1px 0 #ca6a3a, -1px 1px 0 #ca6a3a, 1px 1px 0 #ca6a3a; /* Text outline with pink color */
 }
   .nav-link:hover {
     text-decoration: underline;
@@ -159,19 +157,27 @@ nav a {
     font-size: 1.5rem;
     line-height: 1.5;
     margin: 0 auto;
+    text-align: center;
     
   }
   .wrapper {
-    align-items: center;
-    min-height: 40%;
     display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: 2px dotted rgb(253, 228, 228);
-    margin: 25px;
-    background-color: #001A1E;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add space between elements */
+    margin-bottom: 30px; /* Space between sections */
+  }
+  
+  /* Ensure images do not overflow */
+  .wrapper img {
+    max-width: 300px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    text-align: center;
+  }
+  
+  /* Content styling */
+  .wrapper .content {
+    max-width: 600px; /* Limit text width for readability */
   }
 
   .modern{
@@ -179,9 +185,7 @@ nav a {
     max-height:60%;
   }
 
-  .wrapper div {
-    border-radius: 14px;
-  }
+
 
  /* || Footer */
 
@@ -227,4 +231,15 @@ footer p {
 .footer-social-menu svg {
   width: 30px; /* Adjust the size as needed */
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .wrapper img {
+    max-width: 100%; /* Make the image take up full width */
+  }
 }
