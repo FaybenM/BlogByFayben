@@ -211,7 +211,7 @@ nav a {
   transition: all 0.2s;
   color: #ffffff !important; /* Change the font color */ 
   font-family: serif;
-  text-shadow: -1px -1px 0 #4d4642, 1px -1px 0 #4d4642, -1px 1px 0 #4d4642, 1px 1px 0 #4d4642; /* Text outline with pink color */
+  text-shadow: -1px -1px 0 #8a7e71, 1px -1px 0 #8a7e71, -1px 1px 0 #8a7e71, 1px 1px 0 #8a7e71; /* Text outline with pink color */
 }
   .nav-link:hover {
     text-decoration: underline;
