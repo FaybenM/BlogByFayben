@@ -233,7 +233,10 @@ nav a {
 }
 
 
-
+.resize-img {
+  width:398px;
+  height:auto;
+} /*416px*/
 
 .movie-poster {
   width: 100%;        /* Scales image to fit its parent container */
