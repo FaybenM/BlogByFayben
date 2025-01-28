@@ -7,19 +7,26 @@
   
 }
 
+html, body  {
 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
 
 body {
-  display: flex;
+
+ 
+  background: url(images/contentReviewBG.jpeg);
+  background-color: #f0e3d2;
+ /*    display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
-  font-family: 'Domine', sans-serif;
-  background: url(images/contentReviewBG.jpeg) center center/cover repeat-y;
-  background-color: #f0e3d2;
-  text-align: justify;
+   font-family: 'Domine', sans-serif;
+ text-align: justify;
   line-height: 1.6;
-  /* background-color: #f0e3d2
+  background-color: #f0e3d2
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
@@ -352,4 +359,20 @@ footer p {
 .footer-social-menu svg {
   width: 30px; /* Adjust the size as needed */
   height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    margin-left: 0; /* Center the navbar */
+  }
+
+  nav ul {
+    justify-content: center; /* Center items in the navbar */
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
 }
