@@ -81,7 +81,7 @@ header {
   padding: 10px;
   position: relative;
   z-index: 1001;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--brown);
 }
 
 
