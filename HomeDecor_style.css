@@ -40,13 +40,13 @@ html, body  {
     font-family: 'Domine';
     /*'monospace'*/
     font-size: 300px;
-    font-weight: 250;
-    color: white;
+    /*font-weight: 250;*/
+    color: rgb(255, 255, 255);
   text-shadow: 
-    -0.5px -0.5px 0 black,
-     0.5px -0.5px 0 black,
-    -0.5px  0.5px 0 black,
-     0.5px  0.5px 0 black;
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
     text-align: justify;
   }
 
@@ -56,7 +56,12 @@ html, body  {
   h2 {
     font-size: 3rem;
     text-align: center;
-    color: rgb(161, 206, 161);
+    color: rgb(112, 143, 112);
+    text-shadow: 
+    -0.5px -0.5px 0 black,
+     0.5px -0.5px 0 black,
+    -0.5px  0.5px 0 black,
+     0.5px  0.5px 0 black;
   }
   
  
