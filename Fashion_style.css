@@ -84,7 +84,7 @@ animation: animate 1s linear infinite;
  h6 {
   font-family: 'Domine';
   font-weight: 200;
-  color: #001A1E;
+  color: #ffffff;
   text-align: justify;
   font-size: 1.3rem;
   line-height: 1.5;
@@ -138,7 +138,7 @@ animation: animate 1s linear infinite;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 2px dotted #EACBD1;
+    border: 2px dotted #e8eacb;
     margin: 25px;
     background-color:#9A6397; /*color yellow: rgba(223, 192, 18, 0.892) */
   }
