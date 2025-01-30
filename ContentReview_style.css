@@ -74,7 +74,6 @@ h1 {
 
 
 li {
-  line-height: 1.5;
   text-align: center;
   
 }
@@ -312,24 +311,21 @@ nav a {
 
 
 
+/* || Footer */
+
+
 /* Reset default margin and padding for the footer */
-
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  font-size: 1rem;
-  margin-top: auto; /* Push footer to the bottom */
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* Style the copyright text */
 footer p {
   text-align: center;
-    font-size: 14px;
-    margin: 0; /* Remove default margin to ensure it's snug against the padding */
+  font-size: 14px;
+  margin: 10px 0;
 }
 
 /* Style the social media icons container */

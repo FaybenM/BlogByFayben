@@ -194,8 +194,7 @@ nav a {
   }
 
 
-
- /* || Footer */
+/* || Footer */
 
 
 /* Reset default margin and padding for the footer */
@@ -203,15 +202,13 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1rem;
 }
 
 /* Style the copyright text */
 footer p {
   text-align: center;
   font-size: 14px;
-  margin: 0;
-  color: black;
+  margin: 10px 0;
 }
 
 /* Style the social media icons container */
