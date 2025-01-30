@@ -71,7 +71,7 @@ animation: animate 1s linear infinite;
     color: #fff;
     font-family: 'Shrikhand';
     font-weight: 600;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Text outline with black color */
+    text-shadow: -1px -1px 0 #e8eacb, 1px -1px 0 #e8eacb, -1px 1px 0 #e8eacb, 1px 1px 0 #e8eacb; /* Text outline with black color */
 
   }
   
@@ -84,7 +84,7 @@ animation: animate 1s linear infinite;
  h6 {
   font-family: 'Domine';
   font-weight: 200;
-  color: #ffffff;
+  color: #960846;
   text-align: justify;
   font-size: 1.3rem;
   line-height: 1.5;
